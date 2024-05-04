@@ -1,12 +1,16 @@
 import * as React from 'react'
 import Hero from './hero'
-import Benefit from './benefit'
 import Service from './service'
 import { Metadata } from 'next'
 import {
   defaultOpenGraphMetadata,
   defaultTwitterMetadata,
 } from '~/app/shared-metadata'
+import BestFits from './best-fits'
+import Benefits from './benefits'
+import Offers from './offers'
+import Resources from './resources'
+import FAQs from './faqs'
 
 export const metadata: Metadata = {
   title: 'Your Web Design Partner On The Go | Weebo',
@@ -30,8 +34,12 @@ export default function HomePage(): Readonly<React.ReactElement> {
   return (
     <main className="">
       <Hero />
-      <Benefit />
+      <BestFits />
       <Service />
+      <Benefits />
+      <Offers />
+      <Resources />
+      <FAQs />
     </main>
   )
 }

@@ -1,7 +1,5 @@
 'use client'
 
-import Link from 'next/link'
-import { Button } from '~/components/ui/button'
 import { motion } from 'framer-motion'
 import React from 'react'
 import Image from 'next/image'
@@ -16,7 +14,7 @@ interface CardItemProps {
 }
 
 // card item for the grid section
-// that show the benefits
+// that show the best fits
 function CardItem({
   description,
   image,
@@ -41,7 +39,7 @@ function CardItem({
   )
 }
 
-export default function Benefit(): Readonly<React.ReactElement> {
+export default function BestFits(): Readonly<React.ReactElement> {
   return (
     <section className="relative">
       <div className="absolute">
