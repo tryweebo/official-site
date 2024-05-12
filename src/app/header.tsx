@@ -62,7 +62,7 @@ function Navs(): React.ReactElement {
   ]
 
   return (
-    <nav className="flex items-center border border-border p-[6px] rounded-full bg-background">
+    <nav className="hidden laptop:flex items-center border border-border p-[6px] rounded-full bg-background">
       <ul className="flex items-center">
         {list.map((item, index) => (
           <NavItem item={item} key={index} />
@@ -74,7 +74,7 @@ function Navs(): React.ReactElement {
 
 export default function Header(): Readonly<React.ReactElement> {
   return (
-    <header className="flex items-center px-16 py-3 fixed top-0 inset-x-0 justify-between z-50">
+    <header className="flex items-center px-5 laptop:px-16 py-3 fixed top-0 inset-x-0 justify-between z-50">
       <BrandLogo />
       <div className="flex items-center gap-16">
         <Navs />

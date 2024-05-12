@@ -74,7 +74,7 @@ function CardItem({
 
 function GridList(): React.ReactElement {
   return (
-    <div className="mt-40 grid grid-cols-6 gap-6 w-9/12">
+    <div className="mt-40 grid grid-cols-2 desktop:grid-cols-6 gap-6 laptop:w-9/12">
       <CardItem
         title="One off project"
         description="Best for build new one purpose website"
@@ -84,13 +84,13 @@ function GridList(): React.ReactElement {
         title="Unlimited projects"
         description="Best for agency, creative or marketing that need unlimited website"
         link=""
-        className="col-span-4"
+        className="laptop:col-span-4"
       />
       <CardItem
         title="Custom Offers"
         description="Create new collaboration with custom pricing and plan"
         link=""
-        className="col-span-4"
+        className="laptop:col-span-4"
       />
       <CardItem
         title="In-house & part time "
@@ -104,15 +104,15 @@ function GridList(): React.ReactElement {
 export default function Offers(): Readonly<React.ReactElement> {
   return (
     <section className="relative flex justify-center">
-      <div className="absolute">
+      <div className="absolute justify-center">
         <StrokeLineBackground />
       </div>
-      <div className="container mx-auto py-36 relative">
+      <div className="px-5 laptop:px-0 container mx-auto py-36 relative">
         <div className="flex flex-col items-center mx-auto">
           <div className="flex justify-center">
             <SectionLabel>Offers</SectionLabel>
           </div>
-          <h2 className="text-7xl !leading-tight font-medium font-heading desktop:w-9/12 mt-10 text-center">
+          <h2 className="text-5xl laptop:text-7xl !leading-tight font-medium font-heading desktop:w-9/12 mt-10 text-center">
             One solutions, different plan and ways to start
           </h2>
 

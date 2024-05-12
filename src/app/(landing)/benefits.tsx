@@ -35,7 +35,7 @@ function CardItem({
 
 function GridList(): React.ReactElement {
   return (
-    <div className="mt-40 grid grid-cols-4 gap-6 w-11/12">
+    <div className="mt-40 grid grid-cols-1 target:grid-cols-2 laptop:grid-cols-3 desktop:grid-cols-4 gap-6 laptop:w-11/12">
       <CardItem
         label="HELPING BRANDS STAND OUT"
         title="Achieving results since 2016"
@@ -54,7 +54,7 @@ function GridList(): React.ReactElement {
       <CardItem
         label="BETTER EXPERIENCES"
         title="Start & buy website like a product"
-        className="bg-[#CDE9FF] col-start-2"
+        className="bg-[#CDE9FF] laptop:col-start-2"
       />
       <CardItem
         label="COLLABORATION & COMMUNICATION IS KEY"
@@ -76,18 +76,19 @@ export default function Benefits(): Readonly<React.ReactElement> {
       <div className="absolute">
         <StrokeLineBackground />
       </div>
-      <div className="container mx-auto py-36 relative">
+
+      <div className="px-5 laptop:px-0 container mx-auto py-36 relative">
         <div className="flex flex-col">
           <div className="flex">
             <SectionLabel>Benefits</SectionLabel>
           </div>
-          <h2 className="text-7xl !leading-tight font-medium font-heading desktop:w-9/12 mt-10">
+          <h2 className="text-5xl laptop:text-7xl !leading-tight font-medium font-heading desktop:w-9/12 mt-10">
             One stop solutions, big
             <br className="hidden desktop:block" />
             impact for scale and growth
           </h2>
 
-          <div className="flex gap-28 mt-14">
+          <div className="flex flex-col laptop:flex-row gap-5 laptop:gap-28 mt-14">
             <p className="desktop:w-1/2 text-lg font-medium leading-relaxed">
               Investing in quality web design can give your online presence the
               competitive edge it needs to thrive in today's digital landscape.

@@ -55,7 +55,7 @@ function CardItem({
 
 function GridList(): React.ReactElement {
   return (
-    <div className="mt-40 grid grid-cols-8 gap-5">
+    <div className="mt-40 grid grid-cols-2 laptop:grid-cols-6 desktop:grid-cols-8 gap-5">
       <CardItem
         title="Templates"
         description="Get amazing template to start for wix studio, framer, webflow, and shopify."
@@ -65,7 +65,7 @@ function GridList(): React.ReactElement {
         title="Newsletter"
         description="Get weekly updates about trend, resources, tools, tips and tricks."
         link=""
-        className="col-span-4"
+        className="desktop:col-span-4"
       />
       <CardItem
         title="Community"
@@ -76,7 +76,7 @@ function GridList(): React.ReactElement {
         title="Guides"
         description="Learn how to become web designer, tips, and tricks to run business."
         link=""
-        className="col-span-4"
+        className="desktop:col-span-4"
       />
       <CardItem
         title="Podcast"
@@ -98,12 +98,13 @@ export default function Resources(): Readonly<React.ReactElement> {
       <div className="absolute">
         <StrokeLineBackground />
       </div>
-      <div className="container mx-auto py-36 relative">
+
+      <div className="px-5 laptop:px-0 container mx-auto py-36 relative">
         <div className="flex flex-col">
           <div className="flex">
             <SectionLabel>Resources</SectionLabel>
           </div>
-          <h2 className="text-7xl !leading-tight font-medium font-heading desktop:w-8/12 mt-10">
+          <h2 className="text-5xl laptop:text-7xl !leading-tight font-medium font-heading desktop:w-8/12 mt-10">
             New updates & resources for a better one
           </h2>
 

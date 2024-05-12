@@ -111,12 +111,13 @@ export default function FAQs(): Readonly<React.ReactElement> {
       <div className="absolute top-24">
         <StrokeLineBackground />
       </div>
-      <div className="container mx-auto py-36 relative">
+
+      <div className="px-5 laptop:px-0 container mx-auto py-36 relative">
         <div className="flex flex-col items-center mx-auto">
           <div className="flex justify-center">
             <SectionLabel>FAQs</SectionLabel>
           </div>
-          <h2 className="text-7xl !leading-tight font-medium font-heading desktop:w-9/12 mt-10 text-center">
+          <h2 className="text-5xl laptop:text-7xl !leading-tight font-medium font-heading desktop:w-9/12 mt-10 text-center">
             Commonly asked questions by people around
           </h2>
 
@@ -128,7 +129,7 @@ export default function FAQs(): Readonly<React.ReactElement> {
             </p>
           </div>
 
-          <div className="flex justify-center w-7/12 mx-auto mt-40">
+          <div className="flex justify-center w-11/12 laptop:w-7/12 mx-auto mt-40">
             <FAQList />
           </div>
         </div>
