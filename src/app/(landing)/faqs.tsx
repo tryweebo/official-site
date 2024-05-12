@@ -36,25 +36,25 @@ function FAQItem({
             <path
               d="M12.0369 8.46289V15.6113"
               stroke="black"
-              stroke-width="1.5"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeWidth="1.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             />
             <path
               d="M15.6146 12.0371H8.45874"
               stroke="black"
-              stroke-width="1.5"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeWidth="1.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             />
             <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
+              fillRule="evenodd"
+              clipRule="evenodd"
               d="M2.30005 12.0367C2.30005 4.73454 4.73479 2.2998 12.0369 2.2998C19.339 2.2998 21.7737 4.73454 21.7737 12.0367C21.7737 19.3388 19.339 21.7735 12.0369 21.7735C4.73479 21.7735 2.30005 19.3388 2.30005 12.0367Z"
               stroke="black"
-              stroke-width="1.5"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeWidth="1.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             />
           </svg>
         </div>
