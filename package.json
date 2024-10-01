@@ -8,20 +8,25 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@flaticon/flaticon-uicons": "^3.3.1",
+    "@radix-ui/react-accordion": "^1.2.0",
+    "@radix-ui/react-hover-card": "^1.1.1",
     "@radix-ui/react-slot": "^1.0.2",
+    "@radix-ui/react-tooltip": "^1.1.2",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "framer-motion": "^11.1.7",
     "lenis": "^1.0.45",
-    "next": "14.2.3",
+    "next": "14.2.10",
+    "next-themes": "^0.3.0",
+    "plaiceholder": "^3.0.0",
     "react": "^18",
     "react-dom": "^18",
-    "tailwind-merge": "^2.3.0",
-    "tailwindcss-animate": "^1.0.7"
+    "sharp": "^0.33.5",
+    "sonner": "^1.5.0",
+    "tailwind-merge": "^2.3.0"
   },
   "devDependencies": {
-    "@tailwindcss/aspect-ratio": "^0.4.2",
-    "@tailwindcss/forms": "^0.5.7",
     "@tailwindcss/typography": "^0.5.13",
     "@types/node": "^20",
     "@types/react": "^18",
