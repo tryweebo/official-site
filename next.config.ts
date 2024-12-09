@@ -4,7 +4,8 @@ const nextConfig: NextConfig = {
   images: {
     remotePatterns: [
       { hostname: 'cdn.hashnode.com' },
-      { hostname: 'camo.githubusercontent.com' },
+      { hostname: 'cdn.dribbble.com' },
+      { hostname: 'images.unsplash.com' },
     ],
   },
   skipTrailingSlashRedirect: true,

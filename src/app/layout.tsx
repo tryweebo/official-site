@@ -4,12 +4,12 @@ import { config, sharedMetadata } from '@shared/libs'
 import { fonts } from '@shared/fonts'
 import '@shared/styles/globals.css'
 import { AnimationProvider, PosthogProvider } from '@shared/providers'
-import { CenteredLayout, Footer, Header } from '@shared/components'
+import { CenteredLayout, Footer, Header, Navigation } from '@shared/components'
 
 export const metadata: Metadata = {
   title: 'Weebo',
   description:
-    'Unlimited web design partner for growing startups, agency & enterprise',
+    'Unlimited web design partner for growing startups, agencies & enterprises',
   applicationName: 'Weebo',
   keywords: [
     'Web Designer',
@@ -27,13 +27,13 @@ export const metadata: Metadata = {
     ...sharedMetadata.openGraph,
     title: 'Weebo',
     description:
-      'Unlimited web design partner for growing startups, agency & enterprise',
+      'Unlimited web design partner for growing startups, agencies & enterprises',
   },
   twitter: {
     ...sharedMetadata.twitter,
     title: 'Weebo',
     description:
-      'Unlimited web design partner for growing startups, agency & enterprise',
+      'Unlimited web design partner for growing startups, agencies & enterprises',
   },
   metadataBase: new URL(config.app.host),
   verification: {
@@ -57,8 +57,11 @@ export default function RootLayout({
           <body suppressHydrationWarning>
             <CenteredLayout>
               <Header />
-              <main className="min-h-screen">{children}</main>
+              <main className="min-h-screen py-20 tablet:pt-20 tablet:pb-36">
+                {children}
+              </main>
               <Footer />
+              <Navigation />
             </CenteredLayout>
           </body>
         </AnimationProvider>

@@ -1,20 +1,12 @@
-# Brook Code Theme Official Website
+# Official Site
 
-_"Brook Code Theme official website | The best clean code editor theme that combine simplicity and clean look"_
+_"Unlimited web design for startups, agencies, and enterprises"_
 
 ## About
 
-This project is about the official website of Brook Code Theme. The website used to showcase the product and to become the landing page for the users who want to know about the product. Build using simple and clean look to ensure the user can focus on the content.
+This project is about the official website of Weebo. The website used to showcase the product and to become the landing page for the users who want to know about the product. Build using simple and clean look to ensure the user can focus on the content.
 
-You can access this site on _[https://brookcodetheme.vercel.app](https://brookcodetheme.vercel.app)_
-
-Screenshots:
-
-![Banner](https://cdn.hashnode.com/res/hashnode/image/upload/v1732187828243/cc1d78a8-387f-457e-841e-20f9528588e9.png)
-
-![Banner](https://cdn.hashnode.com/res/hashnode/image/upload/v1732548343657/5d9b090f-4127-4f49-b4d6-c6f583aa3db9.png)
-
-![Banner](https://cdn.hashnode.com/res/hashnode/image/upload/v1732548350443/43f4e5d7-4fda-4ad8-ab92-e57a78b11e7a.png)
+You can access this site on _[https://tryweebo.one](https://tryweebo.one)_
 
 ## Motivation
 

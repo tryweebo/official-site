@@ -1,0 +1,28 @@
+{
+  "faqs": [
+    {
+      "question": "What is Weebo",
+      "answer": "Weebo is a web design and developmentn solutions for agencies, startups and enterprises that need quick websites with better user experiences and conversion rates."
+    },
+    {
+      "question": "Why not hire a full-time designer and developer",
+      "answer": "Hiring full-time professionals can be a headache. It's costlier and more challenging to manage. A senior designer might set you back $100k+, while a developer could easily exceed $300k. That's a total of $500k+ when you factor in benefits, vacation days, and more."
+    },
+    {
+      "question": "What if I'm not happy with the results?",
+      "answer": "This doesn't happen very often, if you're not happy, we offer unlimited revisions. We'll continue refining the project until you're 100% content."
+    },
+    {
+      "question": "How quickly will I receive my project?",
+      "answer": "True to our name, we're Supafast! Typically, most requests are fulfilled in just 48 hours or less. However, for more complex requests, the turnaround time may be a bit longer. Rest assured, we'll keep you informed every step of the way."
+    },
+    {
+      "question": "Can I get a refund?",
+      "answer": "Although we are unable to provide refunds as we allocate dedicated time and resources to each client, we value flexibility. You have the option to pause your service at any time and resume it later, ensuring that you can fully benefit from our collaboration."
+    },
+    {
+      "question": "Do you offer any discounts or promotions?",
+      "answer": "No, we do not offer any discounts or promotions. We are committed to delivering high-quality work that exceeds your expectations."
+    }
+  ]
+}

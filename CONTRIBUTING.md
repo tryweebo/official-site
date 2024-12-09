@@ -10,7 +10,7 @@ To set up the project locally, follow these steps:
 
 1. Clone the repository:
    ```bash
-     git clone https://github.com/brook-code-theme/official-website.git
+     git clone https://github.com/tryweebo/official-site.git
    ```
 2. Install the dependencies by run
    ```bash

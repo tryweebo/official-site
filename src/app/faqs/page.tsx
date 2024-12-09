@@ -1,29 +1,27 @@
 import * as React from 'react'
 import { Metadata } from 'next'
-import { FAQListSection } from './list'
-import { AskSection } from './ask'
 import { sharedMetadata } from '@shared/libs'
+import { FAQSection } from '@features/faqs'
 
 export const metadata: Metadata = {
   title: 'FAQs',
-  description: 'Most asked questions by people around the world',
+  description: 'See the most asked questions',
   openGraph: {
     ...sharedMetadata.openGraph,
     title: 'FAQs',
-    description: 'Most asked questions by people around the world',
+    description: 'See the most asked questions',
   },
   twitter: {
     ...sharedMetadata.twitter,
     title: 'FAQs',
-    description: 'Most asked questions by people around the world',
+    description: 'See the most asked questions',
   },
 }
 
-export default function FAQsPage(): React.ReactElement<any> {
+export default function FAQsPage(): Readonly<React.ReactElement> {
   return (
-    <div className="flex flex-col">
-      <FAQListSection />
-      <AskSection />
+    <div className="flex flex-col gap-20 tablet:gap-36">
+      <FAQSection />
     </div>
   )
 }

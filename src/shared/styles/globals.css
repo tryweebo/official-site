@@ -25,6 +25,7 @@
 
   body {
     @apply text-sm tablet:text-base font-normal text-foreground bg-background leading-normal font-sans antialiased selection:bg-blue-500/10 selection:text-blue-950;
+
     font-variation-settings: normal;
     font-feature-settings:
       'rlig' 1,

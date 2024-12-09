@@ -22,7 +22,7 @@ export default {
       colors: {
         background: 'hsl(var(--color-background))',
         foreground: 'hsl(var(--color-foreground))',
-        surface: 'hsl(var(--color-ambient))',
+        surface: 'hsl(var(--color-surface))',
         border: 'hsl(var(--color-border))',
         input: 'hsl(var(--color-input))',
         primary: {

@@ -7,7 +7,7 @@ const openGraph: OpenGraph = {
   ],
   locale: 'en_US',
   type: 'website',
-  siteName: 'Brook Code Theme',
+  siteName: 'Weebo',
 }
 
 const twitter: Twitter = {
@@ -16,7 +16,7 @@ const twitter: Twitter = {
   ],
   card: 'summary_large_image',
   creator: '@nyomansunima',
-  site: 'Brook Code Theme',
+  site: 'Weebo',
 }
 
 export const sharedMetadata = {

@@ -1,6 +1,7 @@
 import * as React from 'react'
 import { Metadata } from 'next'
 import { sharedMetadata } from '@shared/libs'
+import { WorkSection } from '@features/works'
 
 export const metadata: Metadata = {
   title: 'Works',
@@ -20,10 +21,10 @@ export const metadata: Metadata = {
   },
 }
 
-export default function ResourcesPage(): React.ReactElement<any> {
+export default function WorksPage(): React.ReactElement<any> {
   return (
-    <div className="flex flex-col">
-      <section className="flex flex-col py-20 laptop:pb-56"></section>
+    <div className="flex flex-col gap-20 tablet:gap-36">
+      <WorkSection />
     </div>
   )
 }
