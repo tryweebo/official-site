@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## [v1.0.1](https://github.com/tryweebo/official-site/releases/tag/v1.0.1) - 2024-12-09 13:04:27
+
+**Full Changelog**: https://github.com/tryweebo/official-site/compare/v1.0.0...v1.0.1
+
 ## [v1.0.0](https://github.com/tryweebo/official-site/releases/tag/v1.0.0) - 2024-12-09 12:49:37
 
 **Full Changelog**: https://github.com/tryweebo/official-site/commits/v1.0.0
