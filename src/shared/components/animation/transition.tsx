@@ -10,6 +10,10 @@ interface PageTransitionProps {
 export function PageTransition({
   children,
 }: PageTransitionProps): React.ReactElement<any> {
+  React.useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   return (
     <motion.div
       initial={{ y: 100, opacity: 0 }}

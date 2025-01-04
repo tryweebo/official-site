@@ -21,7 +21,9 @@ function Actions(): React.ReactElement {
         variant={'outline'}
         className="transition-all duration-300 hover:-translate-y-1"
       >
-        <Link href={'/contact'}>Get Started</Link>
+        <Link href={'/contact'}>
+          Get Started <i className="fi fi-rr-heart" />
+        </Link>
       </Button>
     </div>
   )

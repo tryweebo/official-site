@@ -58,7 +58,7 @@ export function Navigation(): React.ReactElement {
         <ul className="flex items-center gap-5">
           <NavigationItem href={'/'}>
             <i className="fi fi-rr-circle-small" />
-            Back
+            Home
           </NavigationItem>
           <NavigationItem href={'/services'}>Services</NavigationItem>
           <NavigationItem href={'/works'}>See works</NavigationItem>

@@ -21,11 +21,11 @@ export const metadata: Metadata = {
 
 export default function PrivacyPage(): React.ReactElement<any> {
   return (
-    <div className="flex justify-center py-20 laptop:pb-56">
+    <div className="flex">
       <ArticleContent>
         <h1>Privacy policy</h1>
 
-        <strong>Effective Date: Tuesday, 01 October 2024</strong>
+        <i>Effective Date: Tuesday, 01 October 2024</i>
         <p>
           This privacy policy outlines the information practices and procedures
           followed by{' '}

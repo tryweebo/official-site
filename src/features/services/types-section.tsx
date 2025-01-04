@@ -26,7 +26,7 @@ export function TypesSection(): React.ReactElement<any> {
           whileInView={{ opacity: 1 }}
           transition={{ type: 'spring', duration: 1.2, delay: 0.2 }}
           viewport={{ once: true, margin: '-30% 0px' }}
-          className="flex flex-wrap gap-3"
+          className="flex gap-3 flex-wrap"
         >
           {types.map((type, index) => (
             <TypeItem key={index} data={{ title: type }} />
