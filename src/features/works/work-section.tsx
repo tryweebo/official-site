@@ -20,7 +20,7 @@ export function WorkSection(): React.ReactElement<any> {
         >
           Good projects from
           <br />
-          our partners
+          our partners.
         </motion.h2>
 
         <div className="grid grid-cols-1 gap-3">

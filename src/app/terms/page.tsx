@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 
 export default function PrivacyPage(): React.ReactElement<any> {
   return (
-    <div className="py-20 laptop:pb-56">
+    <div className="flex">
       <ArticleContent>
         <h1>Terms of use</h1>
         <p>

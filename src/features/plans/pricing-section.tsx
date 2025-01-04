@@ -20,7 +20,7 @@ export function PricingSection(): React.ReactElement<any> {
         >
           We offer simple plans
           <br />
-          so you can pick your fits.
+          pick your fits.
         </motion.h2>
 
         <div className="grid grid-cols-1 gap-3">

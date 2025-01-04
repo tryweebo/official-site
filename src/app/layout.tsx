@@ -3,7 +3,7 @@ import type { Metadata } from 'next'
 import { config, sharedMetadata } from '@shared/libs'
 import { fonts } from '@shared/fonts'
 import '@shared/styles/globals.css'
-import { AnimationProvider, PosthogProvider } from '@shared/providers'
+import { PosthogProvider } from '@shared/providers'
 import { CenteredLayout, Footer, Header, Navigation } from '@shared/components'
 
 export const metadata: Metadata = {
@@ -53,18 +53,16 @@ export default function RootLayout({
       className={`${fonts.inter.variable}`}
     >
       <PosthogProvider>
-        <AnimationProvider>
-          <body suppressHydrationWarning>
-            <CenteredLayout>
-              <Header />
-              <main className="min-h-screen py-20 tablet:pt-20 tablet:pb-36">
-                {children}
-              </main>
-              <Footer />
-              <Navigation />
-            </CenteredLayout>
-          </body>
-        </AnimationProvider>
+        <body suppressHydrationWarning>
+          <CenteredLayout>
+            <Header />
+            <main className="min-h-screen py-20 tablet:pt-20 tablet:pb-36">
+              {children}
+            </main>
+            <Footer />
+            <Navigation />
+          </CenteredLayout>
+        </body>
       </PosthogProvider>
     </html>
   )
