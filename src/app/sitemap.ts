@@ -10,6 +10,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date().toISOString(),
     },
     {
+      url: `${BASE_URL}/offer/free-audit`,
+      lastModified: new Date().toISOString(),
+    },
+    {
       url: `${BASE_URL}/services`,
       lastModified: new Date().toISOString(),
     },
