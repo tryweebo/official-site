@@ -4,7 +4,13 @@ import { config, sharedMetadata } from '@shared/libs'
 import { fonts } from '@shared/fonts'
 import '@shared/styles/globals.css'
 import { PosthogProvider } from '@shared/providers'
-import { CenteredLayout, Footer, Header, Navigation } from '@shared/components'
+import {
+  CenteredLayout,
+  Footer,
+  Header,
+  Navigation,
+  PromotionBanner,
+} from '@shared/components'
 
 export const metadata: Metadata = {
   title: 'Weebo',
@@ -55,8 +61,9 @@ export default function RootLayout({
       <PosthogProvider>
         <body suppressHydrationWarning>
           <CenteredLayout>
+            <PromotionBanner />
             <Header />
-            <main className="min-h-screen py-20 tablet:pt-20 tablet:pb-36">
+            <main className="min-h-screen py-20 tablet:pt-0 tablet:pb-36">
               {children}
             </main>
             <Footer />
