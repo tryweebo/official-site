@@ -4,8 +4,12 @@ import * as React from 'react'
 import { motion } from 'motion/react'
 import { WorkData, WorkItem } from './work-item'
 import data from './work-data.json'
+import dayjs from 'dayjs'
 
 const works = data.works as WorkData[]
+const sortedWorks = works.sort((a, b) =>
+  dayjs(a.date).isAfter(dayjs(b.date)) ? -1 : 1,
+)
 
 export function WorkSection(): React.ReactElement<any> {
   return (
@@ -24,7 +28,7 @@ export function WorkSection(): React.ReactElement<any> {
         </motion.h2>
 
         <div className="grid grid-cols-1 gap-3">
-          {works.map((work, index) => (
+          {sortedWorks.map((work, index) => (
             <WorkItem key={index} work={work} />
           ))}
         </div>
