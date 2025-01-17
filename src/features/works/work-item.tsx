@@ -67,9 +67,8 @@ export function WorkItem({ work }: WorkItemProps): React.ReactElement<any> {
           <Image
             src={image}
             alt={title}
-            layout="fill"
-            objectFit="cover"
-            className="transition-all duration-700 group-hover:scale-105"
+            fill
+            className="transition-all duration-700 group-hover:scale-105 object-cover"
           />
         </picture>
       </div>
