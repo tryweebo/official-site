@@ -1,6 +1,5 @@
 import * as React from 'react'
 import { Metadata } from 'next'
-import { HeroSection } from '@features/landing'
 import { sharedMetadata } from '@shared/libs'
 
 export const metadata: Metadata = {
@@ -22,9 +21,5 @@ export const metadata: Metadata = {
 }
 
 export default function HomePage(): Readonly<React.ReactElement> {
-  return (
-    <div className="flex flex-col gap-20 tablet:gap-36">
-      <HeroSection />
-    </div>
-  )
+  return <div className="flex flex-col gap-20 tablet:gap-36"></div>
 }

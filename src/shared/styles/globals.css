@@ -1,20 +1,48 @@
-@import '@flaticon/flaticon-uicons/css/all/all.css';
+@import '@flaticon/flaticon-uicons/css/all/all.css' layer(base);
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
 
+@plugin '@tailwindcss/forms';
+@plugin '@tailwindcss/typography';
+@plugin 'tailwindcss-animate';
+
+@theme {
+  --font-*: initial;
+  --font-sans: var(--font-inter);
+
+  --breakpoint-*: initial;
+  --breakpoint-tablet: 640px;
+  --breakpoint-laptop: 1024px;
+  --breakpoint-desktop: 1280px;
+
+  --text-base: 0.9375rem;
+
+  --color-background: hsl(0 0 98%);
+  --color-foreground: hsl(0 0 4%);
+  --color-surface: hsl(0 0 100%);
+  --color-border: hsl(0 0 94%);
+  --color-input: hsl(0 0 94%);
+  --color-primary: hsl(0 0 0%);
+  --color-primary-foreground: hsl(0 0 98%);
+  --color-secondary: hsl(0 0 94%);
+  --color-secondary-foreground: hsl(0 0 10%);
+}
+
+/*
+  The default border color has changed to `currentColor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
 @layer base {
-  :root {
-    --color-background: 0 0 98%;
-    --color-foreground: 0 0 4%;
-    --color-surface: 0 0 100%;
-    --color-border: 0 0 94%;
-    --color-input: 0 0 94%;
-    --color-primary: 0 0 0%;
-    --color-primary-foreground: 0 0 98%;
-    --color-secondary: 0 0 94%;
-    --color-secondary-foreground: 0 0 10%;
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
   }
 }
 

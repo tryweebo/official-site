@@ -19,7 +19,7 @@ export default function GlobalError({
       <body suppressHydrationWarning>
         <CenteredLayout>
           <main className="min-h-screen">
-            <h1 className="!leading-tight text-3xl tablet:text-4xl text-center font-medium">
+            <h1 className="leading-tight! text-3xl tablet:text-4xl text-center font-medium">
               Something wrong!
             </h1>
 
