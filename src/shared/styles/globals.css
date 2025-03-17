@@ -9,17 +9,20 @@
 @theme {
   --font-*: initial;
   --font-sans: var(--font-inter);
+  --font-mono: var(--font-jetbrains-mono);
 
   --breakpoint-*: initial;
   --breakpoint-tablet: 640px;
   --breakpoint-laptop: 1024px;
   --breakpoint-desktop: 1280px;
 
+  --text-sm: 0.84375rem;
   --text-base: 0.9375rem;
+  --text-lg: 1.0625rem;
 
-  --color-background: hsl(0 0 98%);
+  --color-background: hsl(0 0 100%);
   --color-foreground: hsl(0 0 4%);
-  --color-surface: hsl(0 0 100%);
+  --color-surface: hsl(0 0 99%);
   --color-border: hsl(0 0 94%);
   --color-input: hsl(0 0 94%);
   --color-primary: hsl(0 0 0%);
@@ -56,7 +59,7 @@
   }
 
   body {
-    @apply text-sm tablet:text-base font-normal text-foreground bg-background leading-normal font-sans antialiased selection:bg-blue-500/10 selection:text-blue-950;
+    @apply text-sm tablet:text-base font-normal text-foreground bg-background leading-normal font-sans subpixel-antialiased selection:bg-blue-500/10 selection:text-blue-950;
 
     font-variation-settings: normal;
     font-feature-settings:

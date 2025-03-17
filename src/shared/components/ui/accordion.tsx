@@ -13,7 +13,7 @@ const AccordionItem = React.forwardRef<
   <AccordionPrimitive.Item
     ref={ref}
     className={mergeClass(
-      'border border-border bg-surface rounded-2xl px-3 py-3',
+      'border border-border bg-surface rounded-2xl p-4',
       className,
     )}
     {...props}
@@ -29,7 +29,7 @@ const AccordionTrigger = React.forwardRef<
     <AccordionPrimitive.Trigger
       ref={ref}
       className={mergeClass(
-        'flex flex-1 items-center text-sm font-medium text-left justify-between transition-all duration-300 [&[data-state=open]>i]:rotate-180',
+        'flex flex-1 items-center text-sm font-medium text-left justify-between transition-all duration-300 [&[data-state=open]>i]:rotate-180 cursor-pointer',
         className,
       )}
       {...props}

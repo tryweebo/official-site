@@ -1,4 +1,4 @@
-import { Inter } from 'next/font/google'
+import { Inter, JetBrains_Mono } from 'next/font/google'
 
 const inter = Inter({
   display: 'swap',
@@ -7,6 +7,14 @@ const inter = Inter({
   weight: ['400', '500', '600', '700', '800', '900'],
 })
 
+const jetBrainsMono = JetBrains_Mono({
+  display: 'swap',
+  variable: '--font-jetbrains-mono',
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700', '800'],
+})
+
 export const fonts = {
   inter,
+  jetBrainsMono,
 }

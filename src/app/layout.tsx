@@ -7,31 +7,34 @@ import { PosthogProvider } from '@shared/providers'
 import { CenteredLayout, Footer, Header } from '@shared/components'
 
 export const metadata: Metadata = {
-  title: 'Weebo',
+  title: 'Lead Web Design & Development Partner | Weebo',
   description:
     'Unlimited web design partner for growing startups, agencies & enterprises',
   applicationName: 'Weebo',
   keywords: [
+    'Landing Page',
+    'Website',
     'Web Designer',
-    'Shopify Developer',
     'Web Developer',
+    'Web Design',
     'Webflow Expert',
     'Framer Expert',
-    'Wix Developer',
     'Custom Web Designer',
+    'Developer',
+    'Designer',
   ],
   publisher: 'Weebo',
   creator: 'Weebo',
   authors: [{ name: 'Nyoman Sunima', url: 'https://nyomansunima.one' }],
   openGraph: {
     ...sharedMetadata.openGraph,
-    title: 'Weebo',
+    title: 'Lead Web Design & Development Partner | Weebo',
     description:
       'Unlimited web design partner for growing startups, agencies & enterprises',
   },
   twitter: {
     ...sharedMetadata.twitter,
-    title: 'Weebo',
+    title: 'Lead Web Design & Development Partner | Weebo',
     description:
       'Unlimited web design partner for growing startups, agencies & enterprises',
   },
@@ -50,7 +53,7 @@ export default function RootLayout({
     <html
       lang="en"
       suppressHydrationWarning
-      className={`${fonts.inter.variable}`}
+      className={`${fonts.inter.variable} ${fonts.jetBrainsMono.variable}`}
     >
       <PosthogProvider>
         <body suppressHydrationWarning>
