@@ -8,7 +8,6 @@ export function Footer(): React.ReactElement<any> {
           &copy; Weebo.
         </span>
         <span className="flex items-center gap-2 transition-all duration-300 cursor-pointer hover:-translate-x-1">
-          <i className="fi fi-br-location-arrow" />
           Design in Bali.
         </span>
       </div>

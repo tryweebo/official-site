@@ -7,7 +7,7 @@ export function Header(): React.ReactElement<any> {
     <header className="flex items-center justify-between h-20 laptop:h-44">
       <Link
         href={'/'}
-        className="flex items-center transition-all duration-300 font-medium hover:-translate-y-1"
+        className="flex items-center transition-all duration-300 font-medium hover:-translate-y-1 font-heading"
       >
         Weebo.
       </Link>
@@ -22,7 +22,7 @@ export function Header(): React.ReactElement<any> {
             href={'https://cal.com/nyomansunima/weebo-intro-call'}
             target="_blank"
           >
-            Book a call <i className="fi fi-br-video-camera-alt" />
+            Book a call <i className="fi fi-br-flame" />
           </Link>
         </Button>
       </div>
