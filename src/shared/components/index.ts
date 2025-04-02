@@ -1,7 +1,5 @@
 export * from './ui/accordion'
 export * from './ui/button'
-export * from './ui/tooltip'
-export * from './ui/hover-card'
 
 export * from './animation/transition'
 
