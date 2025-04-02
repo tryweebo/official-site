@@ -17,20 +17,24 @@ export function BenefitsSection(): React.ReactElement {
       className="flex flex-col items-center py-20"
       id="benefit"
     >
-      <span className="text-sm text-foreground/40 font-mono">Benefits.</span>
+      <span className="text-sm text-foreground/40 font-heading font-medium">
+        Benefits.
+      </span>
 
-      <h2 className="text-3xl font-semibold text-center leading-tight group laptop:w-9/12 mt-8">
-        Get your stunning website done,
+      <h2 className="text-4xl font-semibold font-heading text-center leading-tight group laptop:w-9/12 mt-8">
+        Website done without
         <br />
-        <span className="text-foreground/30">without the headache</span>
+        the headache
       </h2>
 
-      <div className="flex items-center gap-5 mt-48 w-full">
+      <div className="flex items-center gap-5 mt-48 w-full tablet:w-11/12">
         <div className="grid grid-cols-1 tablet:grid-cols-2">
           <div className="flex flex-col col-span-1 border border-border bg-surface rounded-2xl p-1 overflow-hidden rotate-12 -translate-y-20 transition-all duration-300 hover:scale-95 cursor-pointer group">
-            <div className="flex flex-col border border-border overflow-hidden rounded-xl">
+            <div className="flex flex-col border border-border overflow-hidden rounded-xl h-full">
               <div className="flex border-b border-border relative w-full p-3 justify-center">
-                <h3 className="font-medium text-center">Others.</h3>
+                <h3 className="font-medium text-center font-heading">
+                  Others.
+                </h3>
                 <span className="h-2 w-2 rounded-full bg-border absolute right-2 top-2 group-hover:bg-blue-500" />
               </div>
               <ul className="flex flex-col px-3 py-5 gap-3 text-foreground/60">
@@ -76,9 +80,9 @@ export function BenefitsSection(): React.ReactElement {
           </div>
 
           <div className="flex flex-col col-span-1 border border-border bg-background rounded-2xl p-1 overflow-hidden -rotate-12 transition-all duration-300 hover:scale-105 hover:-translate-y-10 cursor-pointer group">
-            <div className="flex flex-col border border-border overflow-hidden rounded-xl">
+            <div className="flex flex-col border border-border overflow-hidden rounded-xl h-full">
               <div className="flex border-b border-border relative w-full p-3 justify-center">
-                <h3 className="font-medium text-center">Weebo.</h3>
+                <h3 className="font-medium text-center font-heading">Weebo.</h3>
 
                 <span className="h-2 w-2 rounded-full bg-border absolute right-2 top-2 group-hover:bg-blue-500" />
               </div>

@@ -34,10 +34,10 @@ function WorkItem({ work }: { work: Work }): React.ReactElement {
     <Link
       href={url}
       target="_blank"
-      className="flex flex-col border border-border rounded-2xl p-3 pb-5 w-full group transition-all duration-300 hover:-translate-y-3 hover:scale-95 relative"
+      className="flex flex-col rounded-2xl p-3 pb-5 w-full group transition-all duration-300 hover:-translate-y-3 hover:scale-95 relative"
     >
       <picture className="relative w-full h-[220px] tablet:h-[420px] overflow-hidden rounded-lg border border-border">
-        <Image src={image} alt={title} fill objectFit="cover" />
+        <Image src={image} alt={title} fill className="object-cover" />
       </picture>
 
       <h3 className="font-medium text-lg mt-6">{title}</h3>
@@ -64,15 +64,17 @@ export function WorkSection(): React.ReactElement {
       className="flex flex-col items-center py-20"
       id="works"
     >
-      <span className="text-sm text-foreground/40 font-mono">Works.</span>
+      <span className="text-sm text-foreground/40 font-heading font-medium">
+        Works.
+      </span>
 
-      <h2 className="text-3xl font-semibold text-center leading-tight mt-8">
+      <h2 className="text-4xl font-semibold font-heading text-center leading-tight mt-8">
         We partner with big
         <br />
-        <span className="text-foreground/30">ambitions teams</span>
+        ambitions teams
       </h2>
 
-      <div className="flex flex-col items-center gap-5 mt-16 w-full laptop:w-10/12">
+      <div className="flex flex-col items-center gap-5 mt-16 w-full tablet:w-10/12">
         {works.map((work, index) => (
           <WorkItem work={work} key={index} />
         ))}

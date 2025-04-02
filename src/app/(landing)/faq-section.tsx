@@ -97,12 +97,14 @@ export function FAQSesction(): React.ReactElement {
       className="flex flex-col items-center py-20"
       id="faq"
     >
-      <span className="text-sm text-foreground/40 font-mono">FAQs.</span>
+      <span className="text-sm text-foreground/40 font-heading font-medium">
+        FAQs.
+      </span>
 
-      <h2 className="text-3xl font-semibold text-center leading-tight group laptop:w-9/12 mt-8">
-        Most asked questions
+      <h2 className="text-4xl font-semibold font-heading text-center leading-tight group laptop:w-9/12 mt-8">
+        Most asked
         <br />
-        <span className="text-foreground/30">about us</span>
+        questions
       </h2>
 
       <div className="flex items-center justify-center gap-5 mt-16 w-full">

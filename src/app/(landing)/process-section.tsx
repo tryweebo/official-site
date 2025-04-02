@@ -42,7 +42,7 @@ function ProcessItem({ step }: { step: Process }): React.ReactElement {
       <div className="flex flex-col rounded-xl p-3 border border-border">
         <div className="flex items-center gap-2">
           <i className="fi fi-sr-bullet text-border group-hover:text-purple-500" />
-          <h3 className="font-medium text-lg">{title}</h3>
+          <h3 className="font-medium text-lg font-heading">{title}</h3>
         </div>
         <p className="text-foreground/60 leading-relaxed text-sm mt-4 pb-3">
           {description}
@@ -68,14 +68,14 @@ export function ProcessSection(): React.ReactElement {
       className="flex flex-col items-center py-20"
       id="how-it-works"
     >
-      <span className="text-sm text-foreground/40 font-mono">
+      <span className="text-sm text-foreground/40 font-heading font-medium">
         How it works.
       </span>
 
-      <h2 className="text-3xl font-semibold text-center leading-tight group laptop:w-9/12 mt-8">
+      <h2 className="text-4xl font-semibold font-heading text-center leading-tight group laptop:w-9/12 mt-8">
         Uncomplicated process
         <br />
-        <span className="text-foreground/30">for amazing results</span>
+        for amazing results
       </h2>
 
       <div className="flex flex-col items-center gap-5 mt-20 tablet:w-10/12 laptop:w-8/12 relative">

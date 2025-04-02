@@ -18,7 +18,7 @@ const services = [
 
 function ServiceItem({ service }: { service: string }): React.ReactElement {
   return (
-    <div className="flex items-center gap-2 border border-border border-dashed rounded-full pl-2 pr-4 py-4 cursor-pointer transition-all duration-300 hover:-translate-y-1 group text-sm font-medium">
+    <div className="flex items-center gap-2 border-2 border-border border-dashed rounded-full pl-2 pr-4 py-4 cursor-pointer transition-all duration-300 hover:-translate-y-1 group text-sm font-medium">
       <i className="fi fi-sr-bullet text-border group-hover:text-orange-500 transition-all duration-300" />
       {service}
     </div>
@@ -41,15 +41,17 @@ export function ServiceSection(): React.ReactElement {
       className="flex flex-col items-center py-20"
       id="services"
     >
-      <span className="text-sm text-foreground/40 font-mono">Services.</span>
+      <span className="text-sm text-foreground/40 font-heading font-medium">
+        Services.
+      </span>
 
-      <h2 className="text-3xl font-semibold text-center leading-tight group laptop:w-9/12 mt-8">
-        We done all of the website work
+      <h2 className="text-4xl font-semibold font-heading text-center leading-tight group laptop:w-9/12 mt-8">
+        All of the website work
         <br />
-        <span className="text-foreground/30">for your needs</span>
+        done for you
       </h2>
 
-      <div className="flex flex-wrap justify-center gap-4 mt-16 w-full">
+      <div className="flex flex-wrap justify-center gap-4 mt-16 w-full tablet:w-10/12">
         {services.map((service, index) => (
           <ServiceItem key={index} service={service} />
         ))}
