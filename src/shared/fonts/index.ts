@@ -1,4 +1,4 @@
-import { Inter, JetBrains_Mono } from 'next/font/google'
+import { Inter, JetBrains_Mono, Bricolage_Grotesque } from 'next/font/google'
 
 const inter = Inter({
   display: 'swap',
@@ -14,7 +14,15 @@ const jetBrainsMono = JetBrains_Mono({
   weight: ['400', '500', '600', '700', '800'],
 })
 
+const bricolageGrotesque = Bricolage_Grotesque({
+  display: 'swap',
+  variable: '--font-bricolage-grotesque',
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700', '800'],
+})
+
 export const fonts = {
   inter,
   jetBrainsMono,
+  bricolageGrotesque,
 }
