@@ -1,19 +1,58 @@
 import * as React from 'react'
+import * as motion from 'motion/react-client'
 
 export function TestimonialSection(): React.ReactElement {
   return (
-    <section className="flex flex-col items-center py-20">
-      <span className="text-sm text-foreground/40 font-mono">
-        Testimonials.
+    <motion.section
+      initial={{ opacity: 0, y: 200 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{
+        type: 'spring',
+        damping: 8,
+        stiffness: 60,
+        ease: 'easeInOut',
+        duration: '1.2',
+      }}
+      viewport={{ once: true, margin: '0% 0% -30% 0%' }}
+      className="flex flex-col items-center py-20"
+      id="testimonials"
+    >
+      <span className="text-sm text-foreground/40 font-heading font-medium">
+        Testimonials
       </span>
 
-      <h2 className="text-3xl font-semibold text-center leading-tight group laptop:w-9/12 mt-8">
-        Spreading trust & love
+      <h2 className="text-4xl font-semibold font-heading text-center leading-tight mt-8">
+        They love to work
         <br />
-        <span className="text-foreground/30">with high quality</span>
+        with us
       </h2>
 
-      <div className="flex items-center gap-5 mt-16 w-full"></div>
-    </section>
+      <div className="flex flex-col items-center gap-5 mt-16 w-full tablet:w-9/12">
+        <div className="flex flex-col gap-20">
+          <div className="flex flex-col items-center gap-10">
+            <p className="text-lg text-center text-pretty leading-relaxed transition-all duration-300 hover:text-foreground/60 hover:scale-95 cursor-pointer">
+              "Weebo did an absolutely stellar job on our new website.
+              Everything was on point and better than our team expected. Very
+              Recommended"
+            </p>
+
+            <span className="text-foreground/60 cursor-pointer">
+              Olga Gomonova, CEO Aimiable
+            </span>
+          </div>
+
+          <div className="flex flex-col items-center gap-10">
+            <p className="text-lg text-center text-pretty leading-relaxed transition-all duration-300 hover:text-foreground/60 hover:scale-95 cursor-pointer">
+              "Working with Weebo has been an absolute pleasure. Very happy with
+              the final result. Good jobs"
+            </p>
+
+            <span className="text-foreground/60 cursor-pointer">
+              Catherine Zhang, Co-Founder Narrable
+            </span>
+          </div>
+        </div>
+      </div>
+    </motion.section>
   )
 }

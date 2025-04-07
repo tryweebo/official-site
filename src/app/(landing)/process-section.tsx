@@ -69,7 +69,7 @@ export function ProcessSection(): React.ReactElement {
       id="how-it-works"
     >
       <span className="text-sm text-foreground/40 font-heading font-medium">
-        How it works.
+        How it works
       </span>
 
       <h2 className="text-4xl font-semibold font-heading text-center leading-tight group laptop:w-9/12 mt-8">

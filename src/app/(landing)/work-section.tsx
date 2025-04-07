@@ -36,14 +36,12 @@ function WorkItem({ work }: { work: Work }): React.ReactElement {
       target="_blank"
       className="flex flex-col rounded-2xl p-3 pb-5 w-full group transition-all duration-300 hover:-translate-y-3 hover:scale-95 relative"
     >
-      <picture className="relative w-full h-[220px] tablet:h-[420px] overflow-hidden rounded-lg border border-border">
+      <picture className="relative w-full h-[220px] tablet:h-[420px] overflow-hidden rounded-xl">
         <Image src={image} alt={title} fill className="object-cover" />
       </picture>
 
       <h3 className="font-medium text-lg mt-6">{title}</h3>
       <span className="text-sm text-foreground/50 mt-2">{tags}</span>
-
-      <i className="fi fi-rr-globe absolute right-6 bottom-6 text-lg animate-spin transition-all duration-300 opacity-0 group-hover:opacity-100 duration-1000" />
     </Link>
   )
 }
@@ -65,7 +63,7 @@ export function WorkSection(): React.ReactElement {
       id="works"
     >
       <span className="text-sm text-foreground/40 font-heading font-medium">
-        Works.
+        Works
       </span>
 
       <h2 className="text-4xl font-semibold font-heading text-center leading-tight mt-8">

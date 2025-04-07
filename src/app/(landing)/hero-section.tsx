@@ -8,8 +8,9 @@ export function HeroSection(): React.ReactElement {
       className="flex flex-col items-center tablet:pt-10 pb-20"
       id="hero"
     >
-      <span className="text-sm text-center flex items-center gap-2 text-blue-700 cursor-pointer font-heading font-medium">
-        Available now
+      <span className="text-sm text-center flex items-center gap-2 text-green-500 cursor-pointer font-heading font-medium">
+        <i className="fi fi-sr-dot-circle text-sm" />
+        Available spot. Limited
       </span>
 
       <h2 className="text-4xl font-semibold font-heading text-center leading-tight group tablet:w-8/12 laptop:w-9/12 mt-8">
@@ -20,6 +21,12 @@ export function HeroSection(): React.ReactElement {
         Helping startups, founders, agencies, and enterprises build their on
         demand website with no lacks
       </p>
+
+      <span className="flex flex-wrap gap-1 items-center mt-6">
+        {Array.from({ length: 5 }).map((_, index) => (
+          <i className="fi fi-sr-star text-pink-500" key={index} />
+        ))}
+      </span>
 
       <div className="flex items-center justify-center gap-6 flex-wrap mt-10">
         <span className="flex items-center gap-2 text-sm text-foreground/60 cursor-pointer transition-all duration-300 hover:-translate-y-1">

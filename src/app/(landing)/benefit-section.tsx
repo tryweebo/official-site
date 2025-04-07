@@ -1,7 +1,7 @@
 import * as React from 'react'
 import * as motion from 'motion/react-client'
 
-export function BenefitsSection(): React.ReactElement {
+export function BenefitSection(): React.ReactElement {
   return (
     <motion.section
       initial={{ opacity: 0, y: 200 }}
@@ -18,7 +18,7 @@ export function BenefitsSection(): React.ReactElement {
       id="benefit"
     >
       <span className="text-sm text-foreground/40 font-heading font-medium">
-        Benefits.
+        Why choose us
       </span>
 
       <h2 className="text-4xl font-semibold font-heading text-center leading-tight group laptop:w-9/12 mt-8">
