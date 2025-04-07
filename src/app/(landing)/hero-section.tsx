@@ -43,7 +43,7 @@ export function HeroSection(): React.ReactElement {
         </span>
       </div>
 
-      <div className="flex items-center gap-5 mt-16">
+      <div className="flex flex-col tablet:flex-row items-center gap-5 mt-16">
         <Button
           asChild
           size={'lg'}
