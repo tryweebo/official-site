@@ -4,7 +4,7 @@ import { Button } from '../ui/button'
 
 export function Header(): React.ReactElement<any> {
   return (
-    <header className="flex items-center justify-between h-20 laptop:h-44">
+    <header className="flex items-center justify-between h-20 laptop:h-28">
       <Link
         href={'/'}
         className="flex items-center transition-all duration-300 font-medium hover:-translate-y-1 font-heading"
