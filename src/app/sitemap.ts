@@ -9,37 +9,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${BASE_URL}`,
       lastModified: new Date().toISOString(),
     },
-    {
-      url: `${BASE_URL}/offer/free-audit`,
-      lastModified: new Date().toISOString(),
-    },
-    {
-      url: `${BASE_URL}/services`,
-      lastModified: new Date().toISOString(),
-    },
-    {
-      url: `${BASE_URL}/works`,
-      lastModified: new Date().toISOString(),
-    },
-    {
-      url: `${BASE_URL}/plans`,
-      lastModified: new Date().toISOString(),
-    },
-    {
-      url: `${BASE_URL}/faqs`,
-      lastModified: new Date().toISOString(),
-    },
-    {
-      url: `${BASE_URL}/contact`,
-      lastModified: new Date().toISOString(),
-    },
-    {
-      url: `${BASE_URL}/terms`,
-      lastModified: new Date().toISOString(),
-    },
-    {
-      url: `${BASE_URL}/privacy`,
-      lastModified: new Date().toISOString(),
-    },
   ]
 }
