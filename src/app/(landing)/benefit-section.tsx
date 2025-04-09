@@ -73,7 +73,7 @@ export function BenefitSection(): React.ReactElement {
                 </li>
                 <li className="flex gap-2">
                   <i className="fi fi-rr-cross-small" />
-                  Lock in one platform specific
+                  No white label partnership
                 </li>
               </ul>
             </div>
@@ -121,6 +121,10 @@ export function BenefitSection(): React.ReactElement {
                 <li className="flex gap-2">
                   <i className="fi fi-sr-check-circle text-green-600" />
                   No vendor and partner lock in
+                </li>
+                <li className="flex gap-2">
+                  <i className="fi fi-sr-check-circle text-green-600" />
+                  Support white label partner
                 </li>
               </ul>
             </div>
