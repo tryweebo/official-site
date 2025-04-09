@@ -29,25 +29,36 @@ export function TestimonialSection(): React.ReactElement {
 
       <div className="flex flex-col items-center gap-5 mt-16 w-full tablet:w-9/12">
         <div className="flex flex-col gap-20">
-          <div className="flex flex-col items-center gap-10">
-            <p className="text-lg text-center text-pretty leading-relaxed transition-all duration-300 hover:text-foreground/60 hover:scale-95 cursor-pointer">
+          <div className="flex flex-col items-center">
+            <p className="text-lg text-center text-pretty leading-relaxed transition-all duration-300 hover:text-foreground/60 cursor-pointer">
               "Weebo did an absolutely stellar job on our new website.
               Everything was on point and better than our team expected. Very
               Recommended"
             </p>
 
-            <span className="text-foreground/60 cursor-pointer">
+            <span className="flex flex-wrap gap-1 items-center mt-5">
+              {Array.from({ length: 5 }).map((_, index) => (
+                <i className="fi fi-sr-star text-pink-500" key={index} />
+              ))}
+            </span>
+
+            <span className="text-foreground/60 cursor-pointer mt-10">
               Olga Gomonova, CEO Aimiable
             </span>
           </div>
-
-          <div className="flex flex-col items-center gap-10">
-            <p className="text-lg text-center text-pretty leading-relaxed transition-all duration-300 hover:text-foreground/60 hover:scale-95 cursor-pointer">
+          <div className="flex flex-col items-center">
+            <p className="text-lg text-center text-pretty leading-relaxed transition-all duration-300 hover:text-foreground/60 cursor-pointer">
               "Working with Weebo has been an absolute pleasure. Very happy with
               the final result. Good jobs"
             </p>
 
-            <span className="text-foreground/60 cursor-pointer">
+            <span className="flex flex-wrap gap-1 items-center mt-5">
+              {Array.from({ length: 5 }).map((_, index) => (
+                <i className="fi fi-sr-star text-pink-500" key={index} />
+              ))}
+            </span>
+
+            <span className="text-foreground/60 cursor-pointer mt-10">
               Catherine Zhang, Co-Founder Narrable
             </span>
           </div>
