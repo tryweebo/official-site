@@ -15,7 +15,7 @@ const services = [
   'Optimization',
   'Webflow Development',
   'Framer Development',
-  'Shopify Developer',
+  'Shopify Development',
   'Custom Development',
 ]
 
