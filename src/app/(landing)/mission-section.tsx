@@ -36,7 +36,12 @@ export function MissionSection(): React.ReactElement {
           </li>
           <li className="flex items-center gap-2 text-foreground/60 hover:text-foreground transition-all duration-300 cursor-pointer">
             <i className="fi fi-sr-bullet" />
-            <i className="fi fi-br-box-open" />
+            <i className="fi fi-br-sticker" />
+            Best white label partner
+          </li>
+          <li className="flex items-center gap-2 text-foreground/60 hover:text-foreground transition-all duration-300 cursor-pointer">
+            <i className="fi fi-sr-bullet" />
+            <i className="fi fi-br-surprise" />
             No cost surprises
           </li>
           <li className="flex items-center gap-2 text-foreground/60 hover:text-foreground transition-all duration-300 cursor-pointer">
