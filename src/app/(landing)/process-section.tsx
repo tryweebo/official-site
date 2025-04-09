@@ -38,8 +38,8 @@ function ProcessItem({ step }: { step: Process }): React.ReactElement {
   const { title, description } = step
 
   return (
-    <div className="flex flex-col rounded-2xl p-1 w-full bg-surface border border-border group cursor-pointer transition-all duration-300 hover:-translate-y-4 hover:scale-105 -rotate-6 odd:rotate-6 hover:shadow-sm hover:odd:rotate-3 hover:-rotate-3">
-      <div className="flex flex-col rounded-xl p-3 border border-border">
+    <div className="flex flex-col rounded-2xl p-1 w-full bg-surface border border-border group cursor-pointer transition-all duration-300 hover:-translate-y-4 hover:scale-105 -rotate-6 odd:rotate-6 hover:shadow-sm hover:odd:rotate-3 hover:-rotate-3 group">
+      <div className="flex flex-col rounded-xl p-3 border-2 border-border border-dashed relative">
         <div className="flex items-center gap-2">
           <i className="fi fi-sr-bullet text-border group-hover:text-purple-500" />
           <h3 className="font-medium text-lg font-heading">{title}</h3>
@@ -47,6 +47,8 @@ function ProcessItem({ step }: { step: Process }): React.ReactElement {
         <p className="text-foreground/60 leading-relaxed text-sm mt-4 pb-3">
           {description}
         </p>
+
+        <i className="fi fi-sr-bullet absolute top-2 right-2 text-foreground/30" />
       </div>
     </div>
   )
