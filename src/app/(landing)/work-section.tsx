@@ -34,10 +34,15 @@ function WorkItem({ work }: { work: Work }): React.ReactElement {
     <Link
       href={url}
       target="_blank"
-      className="flex flex-col rounded-2xl p-3 pb-5 w-full group transition-all duration-300 hover:-translate-y-3 hover:scale-95 relative"
+      className="flex flex-col rounded-2xl p-3 pb-5 w-full group transition-all duration-300 hover:-translate-y-2 relative group"
     >
       <picture className="relative w-full h-[220px] tablet:h-[420px] overflow-hidden rounded-xl">
-        <Image src={image} alt={title} fill className="object-cover" />
+        <Image
+          src={image}
+          alt={title}
+          fill
+          className="object-cover transition-all durat700 group-hover:scale-105"
+        />
       </picture>
 
       <h3 className="font-medium text-lg mt-6">{title}</h3>
