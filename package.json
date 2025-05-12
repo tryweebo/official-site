@@ -20,7 +20,7 @@
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "motion": "^12.6.3",
-    "next": "15.2.4",
+    "next": "15.3.2",
     "posthog-js": "^1.234.6",
     "react": "19.1.0",
     "react-dom": "19.1.0",
