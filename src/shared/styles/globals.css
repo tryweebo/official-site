@@ -1,6 +1,6 @@
-@import '@flaticon/flaticon-uicons/css/all/all.css' layer(base);
+@import "@flaticon/flaticon-uicons/css/all/all.css" layer(base);
 
-@import 'tailwindcss';
+@import "tailwindcss";
 
 @plugin '@tailwindcss/forms';
 @plugin '@tailwindcss/typography';
@@ -30,6 +30,7 @@
   --color-primary-foreground: hsl(0 0 98%);
   --color-secondary: hsl(0 0 94%);
   --color-secondary-foreground: hsl(0 0 10%);
+  --color-accent: hsl(222 100 55%);
 }
 
 @layer base {
@@ -54,8 +55,8 @@
 
     font-variation-settings: normal;
     font-feature-settings:
-      'rlig' 1,
-      'calt' 1;
+      "rlig" 1,
+      "calt" 1;
   }
 
   .fi {

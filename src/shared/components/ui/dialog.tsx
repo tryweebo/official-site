@@ -1,9 +1,7 @@
-'use client'
-
-import * as React from 'react'
-import * as DialogPrimitive from '@radix-ui/react-dialog'
-import { mergeClass } from '@shared/utils'
-import { ScrollArea } from './scroll-area'
+import * as React from "react"
+import * as DialogPrimitive from "@radix-ui/react-dialog"
+import { mergeClass } from "@shared/libs"
+import { ScrollArea } from "./scroll-area"
 
 const Dialog = DialogPrimitive.Root
 const DialogTrigger = DialogPrimitive.Trigger
@@ -17,7 +15,7 @@ const DialogOverlay = React.forwardRef<
   <DialogPrimitive.Overlay
     ref={ref}
     className={mergeClass(
-      'fixed inset-0 z-50 bg-black/20 data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0',
+      "fixed inset-0 z-50 bg-black/20 data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0",
       className,
     )}
     {...props}
@@ -34,12 +32,12 @@ const DialogContent = React.forwardRef<
     <DialogPrimitive.Content
       ref={ref}
       className={mergeClass(
-        'fixed left-[50%] top-[50%] z-50 grid w-[90%] tablet:w-full max-w-lg translate-x-[-50%] translate-y-[-50%] gap-4 border border-border bg-background p-1 rounded-2xl duration-300 data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[state=closed]:slide-out-to-bottom-[48%] data-[state=open]:slide-in-from-bottom-[48%]',
+        "fixed left-[50%] top-[50%] z-50 grid w-[90%] tablet:w-full max-w-lg translate-x-[-50%] translate-y-[-50%] gap-4 border border-border bg-background p-1 rounded-2xl duration-300 data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[state=closed]:slide-out-to-bottom-[48%] data-[state=open]:slide-in-from-bottom-[48%] group",
         className,
       )}
       {...props}
     >
-      <div className="h-full w-full flex flex-col p-6 border-2 border-border border-dashed rounded-xl">
+      <div className="h-full w-full flex flex-col p-6 border-2 border-border border-dashed rounded-xl transition-all duration-300 group-hover:border-accent">
         <DialogPrimitive.Title hidden />
         <ScrollArea className="max-h-[80vh] tablet:max-h-[60vh]">
           {children}

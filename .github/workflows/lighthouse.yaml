@@ -10,13 +10,13 @@ name: Lighthouse
 on:
   workflow_dispatch:
   workflow_run:
-    workflows: ['Release & Publish']
+    workflows: ["Release & Publish"]
     types:
       - completed
   push:
-    branches: ['main']
+    branches: ["main"]
   pull_request:
-    branches: ['main']
+    branches: ["main"]
 
 permissions:
   contents: read
@@ -35,6 +35,6 @@ jobs:
         uses: treosh/lighthouse-ci-action@v12
         with:
           urls: |
-            https://tryweebo.one
+            https://www.tryweebo.one
           uploadArtifacts: true
           temporaryPublicStorage: true
