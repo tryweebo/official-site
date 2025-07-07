@@ -33,7 +33,7 @@
     "@tailwindcss/postcss": "^4.1.7",
     "@tailwindcss/typography": "^0.5.16",
     "@tailwindcss/vite": "^4.1.7",
-    "@types/node": "^22",
+    "@types/node": "^24",
     "@types/react": "^19.1.5",
     "@types/react-dom": "^19.1.5",
     "class-variance-authority": "^0.7.1",
