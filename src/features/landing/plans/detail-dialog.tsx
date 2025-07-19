@@ -13,7 +13,7 @@ export function DetailDialog(): React.ReactElement {
         <Button
           variant={"text"}
           size={"lg"}
-          className="transition-all duration-300 hover:-translate-y-1 text-foreground/60 hover:text-foreground"
+          className="transition-all duration-300 hover:-translate-y-1"
         >
           See timelines
         </Button>
@@ -34,20 +34,20 @@ export function DetailDialog(): React.ReactElement {
         </p>
 
         <ul className="flex flex-col gap-2 ml-1 mt-3">
-          <li className="flex items-center gap-1">
-            <i className="fi fi-sr-bullet text-foreground/60" />
+          <li className="flex items-center gap-2">
+            <i className="fi fi-sc-check-circle" />
             Landing page: 3 days - 1 week
           </li>
-          <li className="flex items-center gap-1">
-            <i className="fi fi-sr-bullet text-foreground/60" />
+          <li className="flex items-center gap-2">
+            <i className="fi fi-sc-check-circle" />
             Standard website: 1 - 2 weeks
           </li>
-          <li className="flex items-center gap-1">
-            <i className="fi fi-sr-bullet text-foreground/60" />
+          <li className="flex items-center gap-2">
+            <i className="fi fi-sc-check-circle" />
             Complex website: 2 - 4 weeks
           </li>
-          <li className="flex items-center gap-1">
-            <i className="fi fi-sr-bullet text-foreground/60" />
+          <li className="flex items-center gap-2">
+            <i className="fi fi-sc-check-circle" />
             Ecommerces: 2 - 4 weeks
           </li>
         </ul>

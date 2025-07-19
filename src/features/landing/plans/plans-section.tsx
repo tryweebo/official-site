@@ -15,7 +15,7 @@ export function PlansSection(): React.ReactElement {
         damping: 8,
         stiffness: 60,
         ease: "easeInOut",
-        duration: "1.2",
+        duration: 1.2,
       }}
       viewport={{ once: true, margin: "0% 0% -30% 0%" }}
       className="flex flex-col items-center py-20"

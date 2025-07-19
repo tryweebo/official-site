@@ -5,10 +5,10 @@ export function SupportPlan(): React.ReactElement {
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <div className="flex flex-col col-span-4 tablet:col-span-2 border-2 border-border border-dashed bg-surface rounded-2xl p-4 transition-all duration-300 hover:-translate-y-2 hover:scale-95 hover:-rotate-6 cursor-pointer -rotate-3">
+        <div className="flex flex-col col-span-4 tablet:col-span-2 bg-surface rounded-2xl p-4 transition-all duration-300 hover:-translate-y-2 hover:scale-95 hover:-rotate-6 cursor-pointer -rotate-3">
           <div className="flex items-center">
             <h3 className="flex items-center gap-1 text-sm font-medium text-purple-500 bg-purple-100 rounded-full px-3 py-1 pl-2">
-              <i className="fi fi-sr-bullet" />
+              <i className="fi fi-sc-check-circle" />
               Support
             </h3>
           </div>
@@ -33,21 +33,21 @@ export function SupportPlan(): React.ReactElement {
         </p>
 
         <ul className="flex flex-col gap-2 ml-1 mt-6">
-          <li className="flex items-center gap-1">
-            <i className="fi fi-sr-bullet text-foreground/60" />
+          <li className="flex items-center gap-2">
+            <i className="fi fi-sc-check-circle" />
             Simple support (Optimization, audits, integrations, content update,
             deployments, backups)
           </li>
-          <li className="flex items-center gap-1">
-            <i className="fi fi-sr-bullet text-foreground/60" />
+          <li className="flex items-center gap-2">
+            <i className="fi fi-sc-check-circle" />
             2-3 days turnaround
           </li>
-          <li className="flex items-center gap-1">
-            <i className="fi fi-sr-bullet text-foreground/60" />
+          <li className="flex items-center gap-2">
+            <i className="fi fi-sc-check-circle" />
             One project at the time
           </li>
-          <li className="flex items-center gap-1">
-            <i className="fi fi-sr-bullet text-foreground/60" />
+          <li className="flex items-center gap-2">
+            <i className="fi fi-sc-check-circle" />
             Pause or cancel anytime
           </li>
         </ul>
