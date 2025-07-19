@@ -15,14 +15,14 @@ export function Header(): React.ReactElement<any> {
       <div className="flex items-center gap-3">
         <Button
           asChild
-          variant={"outline"}
+          variant={"secondary"}
           className="transition-all duration-300 hover:-translate-y-1"
         >
           <Link
             to={"https://cal.com/nyomansunima/weebo-intro-call"}
             target="_blank"
           >
-            Book a call <i className="fi fi-br-flame" />
+            Book a call <i className="fi fi-sc-check-circle" />
           </Link>
         </Button>
       </div>
