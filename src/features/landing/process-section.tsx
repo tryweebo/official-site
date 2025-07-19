@@ -1,7 +1,7 @@
 import * as motion from "motion/react-client"
 import * as React from "react"
 
-type Process = {
+interface Process {
   title: string
   description: string
 }
@@ -20,7 +20,7 @@ const processSteps: Process[] = [
   {
     title: "03. Design & development",
     description:
-      "Next, we'll create designs to solve the problems we identified in the planning stage. We'll do a couple concepts so you have some options. Once you’re completely happy with the design we’ll build it in Webflow, using all the latest features to make it super easy to update.",
+      "Next, we'll create designs to solve the problems we identified in the planning stage. We'll do a couple concepts so you have some options. Once you’re completely happy with the design we’ll build it.",
   },
   {
     title: "04. Revision & iteration",
@@ -38,11 +38,11 @@ function ProcessItem({ step }: { step: Process }): React.ReactElement {
   const { title, description } = step
 
   return (
-    <div className="flex flex-col rounded-2xl p-1 w-full bg-surface border border-border group cursor-pointer transition-all duration-300 hover:-translate-y-4 hover:scale-105 -rotate-6 odd:rotate-6 hover:shadow-sm hover:odd:rotate-3 hover:-rotate-3 group">
-      <div className="flex flex-col rounded-xl p-3 border-2 border-border border-dashed relative">
+    <div className="flex flex-col rounded-2xl p-1 w-full bg-surface group cursor-pointer transition-all duration-300 hover:-translate-y-4 group">
+      <div className="flex flex-col rounded-xl p-3 relative">
         <div className="flex items-center gap-2">
-          <i className="fi fi-sr-bullet text-border group-hover:text-purple-500" />
-          <h3 className="font-medium text-lg font-heading">{title}</h3>
+          <i className="fi fi-sc-check-circle" />
+          <h3 className="font-medium text-lg">{title}</h3>
         </div>
         <p className="text-foreground/60 leading-relaxed text-sm mt-4 pb-3">
           {description}
@@ -64,7 +64,7 @@ export function ProcessSection(): React.ReactElement {
         damping: 8,
         stiffness: 60,
         ease: "easeInOut",
-        duration: "1.2",
+        duration: 1.2,
       }}
       viewport={{ once: true, margin: "0% 0% -30% 0%" }}
       className="flex flex-col items-center py-20"
@@ -81,8 +81,6 @@ export function ProcessSection(): React.ReactElement {
       </h2>
 
       <div className="flex flex-col items-center gap-5 mt-20 tablet:w-10/12 laptop:w-8/12 relative">
-        <span className="border-l-2 border-border border-dashed h-full w-1 absolute" />
-
         {processSteps.map((step, index) => (
           <ProcessItem key={index} step={step} />
         ))}

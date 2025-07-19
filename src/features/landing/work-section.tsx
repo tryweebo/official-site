@@ -2,7 +2,7 @@ import { Link } from "react-router"
 import * as React from "react"
 import * as motion from "motion/react-client"
 
-type Work = {
+interface Work {
   title: string
   tags: string
   image: string
@@ -39,12 +39,12 @@ function WorkItem({ work }: { work: Work }): React.ReactElement {
         <img
           src={image}
           alt={title}
-          className="object-cover transition-all durat700 group-hover:scale-105"
+          className="object-cover transition-all durat700 group-hover:scale-105 h-full w-full"
         />
       </div>
 
       <h3 className="font-medium text-lg mt-6">{title}</h3>
-      <span className="text-sm text-foreground/50 mt-2">{tags}</span>
+      <span className="text-sm text-foreground/60 mt-2">{tags}</span>
     </Link>
   )
 }
@@ -59,7 +59,7 @@ export function WorkSection(): React.ReactElement {
         damping: 8,
         stiffness: 60,
         ease: "easeInOut",
-        duration: "1.2",
+        duration: 1.2,
       }}
       viewport={{ once: true, margin: "0% 0% -30% 0%" }}
       className="flex flex-col items-center py-20"
@@ -75,7 +75,7 @@ export function WorkSection(): React.ReactElement {
         ambitions teams
       </h2>
 
-      <div className="flex flex-col items-center gap-5 mt-16 w-full tablet:w-10/12">
+      <div className="flex flex-col items-center gap-12 mt-16 w-full tablet:w-10/12">
         {works.map((work, index) => (
           <WorkItem work={work} key={index} />
         ))}

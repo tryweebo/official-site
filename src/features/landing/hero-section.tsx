@@ -1,15 +1,14 @@
 import { Button } from "@shared/components"
 import { Link } from "react-router"
-import * as React from "react"
 
-export function HeroSection(): React.ReactElement {
+export function HeroSection() {
   return (
     <section
       className="flex flex-col items-center tablet:pt-10 pb-20"
       id="hero"
     >
-      <span className="text-sm text-center flex items-center gap-2 text-green-500 cursor-pointer font-heading font-medium">
-        <i className="fi fi-sr-dot-circle text-sm" />
+      <span className="text-sm text-center flex items-center gap-2 text-green-500 cursor-pointer font-heading">
+        <i className="fi fi-sc-dot-circle text-sm" />
         Available spot. Limited
       </span>
 
@@ -17,28 +16,28 @@ export function HeroSection(): React.ReactElement {
         Web design & development partner on the go
       </h2>
 
-      <p className="text-center text-foreground/50 w-full tablet:w-7/12 mx-auto mt-10 text-pretty">
+      <p className="text-center text-foreground/60 w-full tablet:w-7/12 mx-auto mt-10 text-pretty leading-7">
         Helping startups, founders, agencies, and enterprises build their on
         demand website with no lacks
       </p>
 
       <span className="flex flex-wrap gap-1 items-center mt-6">
         {Array.from({ length: 5 }).map((_, index) => (
-          <i className="fi fi-sr-star text-pink-500" key={index} />
+          <i className="fi fi-sr-star text-orange-500" key={index} />
         ))}
       </span>
 
       <div className="flex items-center justify-center gap-6 flex-wrap mt-10">
         <span className="flex items-center gap-2 text-sm text-foreground/60 cursor-pointer transition-all duration-300 hover:-translate-y-1">
-          <i className="fi fi-ss-check-circle text-green-600" />
+          <i className="fi fi-sc-check-circle text-green-600" />
           Quick delivery
         </span>
         <span className="flex items-center gap-2 text-sm text-foreground/60 cursor-pointer transition-all duration-300 hover:-translate-y-1">
-          <i className="fi fi-ss-check-circle text-green-600" />
+          <i className="fi fi-sc-check-circle text-green-600" />
           Cancel anytime
         </span>
         <span className="flex items-center gap-2 text-sm text-foreground/60 cursor-pointer transition-all duration-300 hover:-translate-y-1">
-          <i className="fi fi-ss-check-circle text-green-600" />
+          <i className="fi fi-sc-check-circle text-green-600" />
           Transparent pricing
         </span>
       </div>
@@ -54,18 +53,18 @@ export function HeroSection(): React.ReactElement {
             target="_blank"
           >
             Get Started
-            <i className="fi fi-br-location-arrow" />
+            <i className="fi fi-sr-location-arrow" />
           </Link>
         </Button>
         <Button
           asChild
           size={"lg"}
           className="transition-all duration-300 hover:-translate-y-1"
-          variant={"outline"}
+          variant={"secondary"}
         >
           <Link to={"#plans"}>
             See Plans
-            <i className="fi fi-br-heart" />
+            <i className="fi fi-sc-heart" />
           </Link>
         </Button>
       </div>
