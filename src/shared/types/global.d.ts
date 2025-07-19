@@ -1,4 +1,4 @@
-import { MotionProps as OriginalMotionProps } from "motion/react"
+import type { MotionProps as OriginalMotionProps } from "motion/react"
 
 declare module "motion/react" {
   export interface MotionProps extends OriginalMotionProps {

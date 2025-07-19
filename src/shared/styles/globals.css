@@ -1,5 +1,12 @@
-@import "@flaticon/flaticon-uicons/css/all/all.css" layer(base);
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
+/* Icons */
+@import url("https://cdn-uicons.flaticon.com/3.0.0/uicons-solid-chubby/css/uicons-solid-chubby.css");
+@import url("https://cdn-uicons.flaticon.com/3.0.0/uicons-bold-rounded/css/uicons-bold-rounded.css");
+@import url("https://cdn-uicons.flaticon.com/3.0.0/uicons-solid-rounded/css/uicons-solid-rounded.css");
+
+/* Tailwindcss */
 @import "tailwindcss";
 
 @plugin '@tailwindcss/forms';
@@ -8,9 +15,7 @@
 
 @theme {
   --font-*: initial;
-  --font-sans: var(--font-inter);
-  --font-mono: var(--font-jetbrains-mono);
-  --font-heading: var(--font-bricolage-grotesque);
+  --font-sans: "Inter", sans-serif;
 
   --breakpoint-*: initial;
   --breakpoint-tablet: 640px;
@@ -23,7 +28,7 @@
 
   --color-background: hsl(0 0 100%);
   --color-foreground: hsl(0 0 4%);
-  --color-surface: hsl(0 0 99%);
+  --color-surface: hsl(0 0 98%);
   --color-border: hsl(0 0 94%);
   --color-input: hsl(0 0 94%);
   --color-primary: hsl(0 0 0%);
