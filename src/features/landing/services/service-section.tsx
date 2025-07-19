@@ -3,16 +3,11 @@ import * as motion from "motion/react-client"
 import { StackDialog } from "./stack-dialog"
 
 const services = [
-  "Design",
-  "Development",
-  "Branding",
-  "Copywriting",
-  "Integrations",
-  "Audits",
-  "Migrations",
-  "Backups",
-  "Support",
-  "Optimization",
+  "Design & development",
+  "Branding & copywriting",
+  "Integrations & automation",
+  "Migrations & backups",
+  "Optimization & audits",
   "Webflow Development",
   "Framer Development",
   "Shopify Development",
@@ -21,7 +16,8 @@ const services = [
 
 function ServiceItem({ service }: { service: string }): React.ReactElement {
   return (
-    <div className="flex items-center gap-2 bg-secondary/60 rounded-full px-5 py-4 cursor-pointer transition-all duration-300 hover:-translate-y-1 group text-sm font-medium">
+    <div className="flex items-center gap-2 cursor-pointer transition-all duration-300 hover:-translate-y-1 text-foreground/60 hover:text-foreground">
+      <i className="fi fi-sc-check-circle text-foreground" />
       {service}
     </div>
   )
@@ -37,7 +33,7 @@ export function ServiceSection(): React.ReactElement {
         damping: 8,
         stiffness: 60,
         ease: "easeInOut",
-        duration: "1.2",
+        duration: 1.2,
       }}
       viewport={{ once: true, margin: "0% 0% -30% 0%" }}
       className="flex flex-col items-center py-20"
@@ -57,7 +53,7 @@ export function ServiceSection(): React.ReactElement {
         <StackDialog />
       </div>
 
-      <div className="flex flex-wrap justify-center gap-4 mt-16 w-full tablet:w-10/12">
+      <div className="flex flex-col justify-center gap-4 mt-16">
         {services.map((service, index) => (
           <ServiceItem key={index} service={service} />
         ))}

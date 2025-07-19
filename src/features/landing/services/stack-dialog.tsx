@@ -13,7 +13,7 @@ export function StackDialog(): React.ReactElement {
         <Button
           variant={"text"}
           size={"lg"}
-          className="transition-all duration-300 hover:-translate-y-1 text-foreground/60 hover:text-foreground"
+          className="transition-all duration-300 hover:-translate-y-1"
         >
           See details
         </Button>
