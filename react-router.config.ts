@@ -1,7 +1,7 @@
 import type { Config } from "@react-router/dev/config"
 
 export default {
-  appDirectory: "src",
+  appDirectory: "src/app",
   ssr: true,
   prerender: true,
 } satisfies Config
