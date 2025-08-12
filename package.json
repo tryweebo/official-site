@@ -24,7 +24,7 @@
     "isbot": "^5",
     "motion": "^12.12.2",
     "react": "19.1.0",
-    "react-dom": "19.1.0",
+    "react-dom": "19.1.1",
     "react-router": "^7.6.0"
   },
   "devDependencies": {
