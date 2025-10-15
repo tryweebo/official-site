@@ -10,17 +10,21 @@ import {
   TestimonialSection,
   WorkSection,
 } from "@features/landing"
-import { generatedMetadata } from "@shared/libs"
+import { generateMetaTags } from "@shared/libs"
+import { createFileRoute } from "@tanstack/react-router"
 
-export function meta() {
-  return generatedMetadata({
-    title: "Lead Web Design & Development Partner | Weebo",
-    description:
-      "Unlimited web design partner for growing startups, agencies & enterprises",
-  })
-}
+export const Route = createFileRoute("/")({
+  head: () => ({
+    meta: generateMetaTags({
+      title: "Lead Web Design & Development Partner | Weebo",
+      description:
+        "Unlimited web design partner for growing startups, agencies & enterprises",
+    }),
+  }),
+  component: PageComponent,
+})
 
-export default function HomePage() {
+function PageComponent() {
   return (
     <main className="flex flex-col gap-10">
       <HeroSection />
