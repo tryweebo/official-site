@@ -6,7 +6,7 @@ _"Unlimited web design for startups, agencies, and enterprises"_
 
 This project is about the official website of Weebo. The website used to showcase the product and to become the landing page for the users who want to know about the product. Build using simple and clean look to ensure the user can focus on the content.
 
-You can access this site on _[https://tryweebo.one](https://tryweebo.one)_
+You can access this site on _[https://tryweebo.site](https://tryweebo.site)_
 
 ## Motivation
 
