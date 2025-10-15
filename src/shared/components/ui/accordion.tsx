@@ -1,6 +1,6 @@
-import * as React from "react"
 import * as AccordionPrimitive from "@radix-ui/react-accordion"
 import { mergeClass } from "@shared/libs"
+import * as React from "react"
 
 const Accordion = AccordionPrimitive.Root
 
@@ -71,4 +71,4 @@ const AccordionContent = ({
 
 AccordionContent.displayName = AccordionPrimitive.Content.displayName
 
-export { Accordion, AccordionItem, AccordionTrigger, AccordionContent }
+export { Accordion, AccordionContent, AccordionItem, AccordionTrigger }

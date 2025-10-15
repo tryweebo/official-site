@@ -1,10 +1,10 @@
-import * as React from "react"
 import {
   Button,
   Dialog,
   DialogContent,
   DialogTrigger,
 } from "@shared/components"
+import * as React from "react"
 
 export function DetailDialog(): React.ReactElement {
   return (

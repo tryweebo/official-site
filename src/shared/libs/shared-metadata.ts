@@ -1,18 +1,24 @@
-import { loadConfig } from "./config"
-
-interface GeneratedMetadataInput {
+interface MetaTagsInput {
   title: string
   description: string
   image?: string
+  keywords?: string
 }
 
-export function generatedMetadata({
+export function generateMetaTags({
   title,
   description,
   image,
-}: GeneratedMetadataInput) {
-  const config = loadConfig()
-
+  keywords,
+}: MetaTagsInput):
+  | (
+      | React.DetailedHTMLProps<
+          React.MetaHTMLAttributes<HTMLMetaElement>,
+          HTMLMetaElement
+        >
+      | undefined
+    )[]
+  | undefined {
   return [
     { title },
     {
@@ -22,12 +28,16 @@ export function generatedMetadata({
     {
       name: "keywords",
       content:
+        keywords ||
         "Product Designer, UI UX Designer, Web Designer, Shopify Developer, Web Developer, Webflow Expert, Framer Expert, Squarespace, Wix Developer, Fullstack, Mobile Developer, Indie Hacker",
     },
     { name: "creator", content: "Weebo" },
     { name: "publisher", content: "Weebo" },
     { name: "application-name", content: "Weebo" },
-    { name: "google-site-verification", content: config.verification.google },
+    {
+      name: "google-site-verification",
+      content: "uJ4nZwWkaO0JcSSuUdkkxjTiWLPI61o95zrtFuXPeQM",
+    },
     { name: "category", content: "Websites" },
     { name: "generator", content: "React Router" },
     { name: "pinterest-rich-pin", content: "true" },

@@ -1,9 +1,9 @@
-import * as React from "react"
 import * as motion from "motion/react-client"
+import * as React from "react"
 import { CustomPlan } from "./custom-plan"
-import { SupportPlan } from "./support-plan"
-import { SubscriptionPlan } from "./subscription-plan"
 import { DetailDialog } from "./detail-dialog"
+import { SubscriptionPlan } from "./subscription-plan"
+import { SupportPlan } from "./support-plan"
 
 export function PlansSection(): React.ReactElement {
   return (

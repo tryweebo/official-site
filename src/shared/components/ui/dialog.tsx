@@ -1,6 +1,6 @@
-import * as React from "react"
 import * as DialogPrimitive from "@radix-ui/react-dialog"
 import { mergeClass } from "@shared/libs"
+import * as React from "react"
 import { ScrollArea } from "./scroll-area"
 
 const Dialog = DialogPrimitive.Root
@@ -65,9 +65,9 @@ DialogContent.displayName = DialogPrimitive.Content.displayName
 
 export {
   Dialog,
-  DialogPortal,
-  DialogOverlay,
   DialogClose,
-  DialogTrigger,
   DialogContent,
+  DialogOverlay,
+  DialogPortal,
+  DialogTrigger,
 }

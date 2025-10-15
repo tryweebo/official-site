@@ -4,8 +4,8 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@shared/components"
-import * as React from "react"
 import * as motion from "motion/react-client"
+import * as React from "react"
 
 interface FAQ {
   question: string

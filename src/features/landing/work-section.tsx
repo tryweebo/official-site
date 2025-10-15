@@ -1,6 +1,5 @@
-import { Link } from "react-router"
-import * as React from "react"
 import * as motion from "motion/react-client"
+import * as React from "react"
 
 interface Work {
   title: string
@@ -30,8 +29,8 @@ function WorkItem({ work }: { work: Work }): React.ReactElement {
   const { title, tags, image, url } = work
 
   return (
-    <Link
-      to={url}
+    <a
+      href={url}
       target="_blank"
       className="flex flex-col rounded-2xl p-3 pb-5 w-full group transition-all duration-300 hover:-translate-y-2 relative group"
     >
@@ -45,7 +44,7 @@ function WorkItem({ work }: { work: Work }): React.ReactElement {
 
       <h3 className="font-medium text-lg mt-6">{title}</h3>
       <span className="text-sm text-foreground/60 mt-2">{tags}</span>
-    </Link>
+    </a>
   )
 }
 

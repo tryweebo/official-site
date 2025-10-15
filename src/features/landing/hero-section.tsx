@@ -1,5 +1,4 @@
 import { Button } from "@shared/components"
-import { Link } from "react-router"
 
 export function HeroSection() {
   return (
@@ -48,13 +47,14 @@ export function HeroSection() {
           size={"lg"}
           className="transition-all duration-300 hover:-translate-y-1"
         >
-          <Link
-            to={"https://cal.com/nyomansunima/weebo-intro-call"}
+          <a
+            href={"https://cal.com/nyomansunima/weebo-intro-call"}
             target="_blank"
+            rel="noreferrer noopener"
           >
             Get Started
             <i className="fi fi-sr-location-arrow" />
-          </Link>
+          </a>
         </Button>
         <Button
           asChild
@@ -62,10 +62,10 @@ export function HeroSection() {
           className="transition-all duration-300 hover:-translate-y-1"
           variant={"secondary"}
         >
-          <Link to={"#plans"}>
+          <a href={"/#plans"}>
             See Plans
             <i className="fi fi-sc-heart" />
-          </Link>
+          </a>
         </Button>
       </div>
     </section>

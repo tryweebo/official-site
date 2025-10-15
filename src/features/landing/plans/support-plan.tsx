@@ -1,5 +1,5 @@
-import * as React from "react"
 import { Dialog, DialogContent, DialogTrigger } from "@shared/components"
+import * as React from "react"
 
 export function SupportPlan(): React.ReactElement {
   return (

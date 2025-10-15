@@ -1,7 +1,6 @@
 import { Button } from "@shared/components"
-import { Link } from "react-router"
-import * as React from "react"
 import * as motion from "motion/react-client"
+import * as React from "react"
 
 export function CTASection(): React.ReactElement {
   return (
@@ -55,13 +54,14 @@ export function CTASection(): React.ReactElement {
           size={"lg"}
           className="transition-all duration-300 hover:-translate-y-1"
         >
-          <Link
-            to={"https://cal.com/nyomansunima/weebo-intro-call"}
+          <a
+            href={"https://cal.com/nyomansunima/weebo-intro-call"}
             target="_blank"
+            rel="noreferrer noopener"
           >
             Get the spot now
             <i className="fi fi-sr-location-arrow" />
-          </Link>
+          </a>
         </Button>
       </div>
     </motion.section>
