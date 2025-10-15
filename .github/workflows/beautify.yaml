@@ -6,7 +6,7 @@
 # The workflow checks out the code, sets up the Bun environment, and then runs the
 # respective linting and formatting commands.
 
-name: Beautify Code
+name: Beautify
 
 on: [push, pull_request]
 
@@ -20,9 +20,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout the code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
-      - name: Setup Bun Environment
+      - name: Setup bun environment
         uses: oven-sh/setup-bun@v2
         with:
           bun-version: latest
@@ -34,13 +34,13 @@ jobs:
         run: bun run typecheck
 
   format:
-    name: Format Code
+    name: Format
     runs-on: ubuntu-latest
     steps:
       - name: Checkout the code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
-      - name: Setup Bun Environment
+      - name: Setup bun environment
         uses: oven-sh/setup-bun@v2
         with:
           bun-version: latest
@@ -50,3 +50,21 @@ jobs:
 
       - name: Format the code
         run: bun run format
+
+  lint:
+    name: Lint
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout the code
+        uses: actions/checkout@v5
+
+      - name: Setup bun environment
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+
+      - name: Install dependencies
+        run: bun install
+
+      - name: Lint the code
+        run: bun run lint
