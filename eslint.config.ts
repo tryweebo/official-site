@@ -1,22 +1,17 @@
-import {
-  combine,
-  ignores,
-  imports,
-  javascript,
-  react,
-  typescript,
-} from "@antfu/eslint-config"
+import config from "@antfu/eslint-config"
 
-export default combine(
-  ignores(["build/**", ".react-router/**"]),
-  javascript(),
-  imports(),
-  typescript(),
-  react({
+export default config({
+  stylistic: false,
+  typescript: {
+    overrides: {
+      "eslint-comments/no-unlimited-disable": "off",
+    },
+  },
+  react: {
     overrides: {
       "react/no-array-index-key": "off",
       "react-dom/no-dangerously-set-innerhtml": "off",
       "react-refresh/only-export-components": "off",
     },
-  }),
-)
+  },
+})
