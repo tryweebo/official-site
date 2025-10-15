@@ -6,9 +6,9 @@ export function Header(): React.ReactElement<any> {
     <header className="flex items-center justify-between h-20 laptop:h-28">
       <a
         href={"/"}
-        className="flex items-center transition-all duration-300 font-medium hover:-translate-y-1 font-heading"
+        className="flex items-center justify-center transition-all duration-300 font-medium hover:-translate-y-1 h-10 w-10 rounded-2xl bg-secondary"
       >
-        Weebo.
+        <i className="fi fi-sc-bookmark" />
       </a>
 
       <div className="flex items-center gap-3">

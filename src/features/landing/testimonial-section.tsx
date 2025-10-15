@@ -38,7 +38,7 @@ export function TestimonialSection(): React.ReactElement {
 
             <span className="flex flex-wrap gap-1 items-center mt-5">
               {Array.from({ length: 5 }).map((_, index) => (
-                <i className="fi fi-sr-star text-pink-500" key={index} />
+                <i className="fi fi-sr-star text-foreground/40" key={index} />
               ))}
             </span>
 
@@ -54,7 +54,7 @@ export function TestimonialSection(): React.ReactElement {
 
             <span className="flex flex-wrap gap-1 items-center mt-5">
               {Array.from({ length: 5 }).map((_, index) => (
-                <i className="fi fi-sr-star text-pink-500" key={index} />
+                <i className="fi fi-sr-star text-foreground/40" key={index} />
               ))}
             </span>
 

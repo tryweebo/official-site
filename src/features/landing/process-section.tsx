@@ -41,7 +41,7 @@ function ProcessItem({ step }: { step: Process }): React.ReactElement {
     <div className="flex flex-col rounded-2xl p-1 w-full bg-surface group cursor-pointer transition-all duration-300 hover:-translate-y-4 group">
       <div className="flex flex-col rounded-xl p-3 relative">
         <div className="flex items-center gap-2">
-          <i className="fi fi-sc-check-circle" />
+          <i className="fi fi-sc-check-circle text-foreground/40" />
           <h3 className="font-medium text-lg">{title}</h3>
         </div>
         <p className="text-foreground/60 leading-relaxed text-sm mt-4 pb-3">

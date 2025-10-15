@@ -17,7 +17,7 @@ const services = [
 function ServiceItem({ service }: { service: string }): React.ReactElement {
   return (
     <div className="flex items-center gap-2 cursor-pointer transition-all duration-300 hover:-translate-y-1 text-foreground/60 hover:text-foreground">
-      <i className="fi fi-sc-check-circle text-foreground" />
+      <i className="fi fi-sc-bullet text-foreground/40" />
       {service}
     </div>
   )

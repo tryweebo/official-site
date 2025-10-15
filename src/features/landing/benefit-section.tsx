@@ -30,42 +30,42 @@ export function BenefitSection(): React.ReactElement {
       <div className="flex items-center gap-5 mt-16">
         <ul className="flex flex-col px-3 py-5 gap-4">
           <li className="flex gap-2 text-foreground/60 hover:text-foreground cursor-pointer">
-            <i className="fi fi-sc-check-circle text-foreground" />
+            <i className="fi fi-sc-check-circle text-foreground/40" />
             Pick what platform you need
           </li>
 
           <li className="flex gap-2 text-foreground/60 hover:text-foreground cursor-pointer">
-            <i className="fi fi-sc-check-circle text-foreground" />
+            <i className="fi fi-sc-check-circle text-foreground/40" />
             Responsive and fast communication
           </li>
 
           <li className="flex gap-2 text-foreground/60 hover:text-foreground cursor-pointer">
-            <i className="fi fi-sc-check-circle text-foreground" />
+            <i className="fi fi-sc-check-circle text-foreground/40" />
             Simple and streamline process
           </li>
           <li className="flex gap-2 text-foreground/60 hover:text-foreground cursor-pointer">
-            <i className="fi fi-sc-check-circle text-foreground" />
+            <i className="fi fi-sc-check-circle text-foreground/40" />
             Transparent pricing & no hidden fees
           </li>
           <li className="flex gap-2 text-foreground/60 hover:text-foreground cursor-pointer">
-            <i className="fi fi-sc-check-circle text-foreground" />
+            <i className="fi fi-sc-check-circle text-foreground/40" />
             World class sites works
           </li>
 
           <li className="flex gap-2 text-foreground/60 hover:text-foreground cursor-pointer">
-            <i className="fi fi-sc-check-circle text-foreground" />
+            <i className="fi fi-sc-check-circle text-foreground/40" />
             Unlimited revisions and feedbacks
           </li>
           <li className="flex gap-2 text-foreground/60 hover:text-foreground cursor-pointer">
-            <i className="fi fi-sc-check-circle text-foreground" />
+            <i className="fi fi-sc-check-circle text-foreground/40" />
             No hiring, no commitment
           </li>
           <li className="flex gap-2 text-foreground/60 hover:text-foreground cursor-pointer">
-            <i className="fi fi-sc-check-circle text-foreground" />
+            <i className="fi fi-sc-check-circle text-foreground/40" />
             No vendor and partner lock in
           </li>
           <li className="flex gap-2 text-foreground/60 hover:text-foreground cursor-pointer">
-            <i className="fi fi-sc-check-circle text-foreground" />
+            <i className="fi fi-sc-check-circle text-foreground/40" />
             Support white label partner
           </li>
         </ul>

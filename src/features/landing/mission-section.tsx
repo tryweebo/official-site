@@ -30,35 +30,35 @@ export function MissionSection(): React.ReactElement {
       <div className="flex items-center justify-center gap-5 mt-16 w-full tablet:w-10/12">
         <ul className="flex flex-col gap-4">
           <li className="flex items-center gap-3 text-foreground/60 hover:text-foreground transition-all duration-300 cursor-pointer">
-            <i className="fi fi-sc-check-circle text-foreground" />
+            <i className="fi fi-sc-check-circle text-foreground/40" />
             10x Team scale up
           </li>
           <li className="flex items-center gap-3 text-foreground/60 hover:text-foreground transition-all duration-300 cursor-pointer">
-            <i className="fi fi-sc-check-circle text-foreground" />
+            <i className="fi fi-sc-check-circle text-foreground/40" />
             Best white label partner
           </li>
           <li className="flex items-center gap-3 text-foreground/60 hover:text-foreground transition-all duration-300 cursor-pointer">
-            <i className="fi fi-sc-check-circle text-foreground" />
+            <i className="fi fi-sc-check-circle text-foreground/40" />
             No cost surprises
           </li>
           <li className="flex items-center gap-3 text-foreground/60 hover:text-foreground transition-all duration-300 cursor-pointer">
-            <i className="fi fi-sc-check-circle text-foreground" />
+            <i className="fi fi-sc-check-circle text-foreground/40" />
             Fast turnarounds
           </li>
           <li className="flex items-center gap-3 text-foreground/60 hover:text-foreground transition-all duration-300 cursor-pointer">
-            <i className="fi fi-sc-check-circle text-foreground" />
+            <i className="fi fi-sc-check-circle text-foreground/40" />
             Professional quality
           </li>
           <li className="flex items-center gap-3 text-foreground/60 hover:text-foreground transition-all duration-300 cursor-pointer">
-            <i className="fi fi-sc-check-circle text-foreground" />
+            <i className="fi fi-sc-check-circle text-foreground/40" />
             Years experiences
           </li>
           <li className="flex items-center gap-3 text-foreground/60 hover:text-foreground transition-all duration-300 cursor-pointer">
-            <i className="fi fi-sc-check-circle text-foreground" />
+            <i className="fi fi-sc-check-circle text-foreground/40" />
             No risk
           </li>
           <li className="flex items-center gap-3 text-foreground/60 hover:text-foreground transition-all duration-300 cursor-pointer">
-            <i className="fi fi-sc-check-circle text-foreground" />
+            <i className="fi fi-sc-check-circle text-foreground/40" />
             Satisfaction guaranteed
           </li>
         </ul>

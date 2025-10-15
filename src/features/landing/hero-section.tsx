@@ -3,16 +3,17 @@ import { Button } from "@shared/components"
 export function HeroSection() {
   return (
     <section
-      className="flex flex-col items-center tablet:pt-10 pb-20"
+      className="flex flex-col items-center tablet:pt-20 pb-20"
       id="hero"
     >
-      <span className="text-sm text-center flex items-center gap-2 text-green-500 cursor-pointer font-heading">
-        <i className="fi fi-sc-dot-circle text-sm" />
+      <span className="text-sm text-center flex items-center text-foreground/40 font-medium cursor-pointer">
         Available spot. Limited
       </span>
 
       <h2 className="text-4xl font-semibold font-heading text-center leading-tight group tablet:w-8/12 laptop:w-9/12 mt-8">
-        Web design & development partner on the go
+        Web design & dev
+        <br />
+        partner on the go
       </h2>
 
       <p className="text-center text-foreground/60 w-full tablet:w-7/12 mx-auto mt-10 text-pretty leading-7">
