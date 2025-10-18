@@ -1,26 +1,12 @@
-import { CenteredLayout, Footer, Header } from "@shared/components"
-import styles from "@shared/styles/globals.css?url"
-import {
-  createRootRouteWithContext,
-  HeadContent,
-  Scripts,
-} from "@tanstack/react-router"
+import { Button, CenteredLayout, Footer, Header } from "@shared/components";
+import styles from "@shared/styles/globals.css?url";
+import { createRootRoute, HeadContent, Scripts } from "@tanstack/react-router";
 
-interface RootComponentProps {
-  children: React.ReactNode
-}
+type RootComponentProps = {
+  children: React.ReactNode;
+};
 
-interface RootWithContextProps {
-  // TODO: Define your context props here
-  // you can add several integration into the context router
-  // will be visible to the router file
-  //
-  // example:
-  // queryClient: QueryClient
-  // etc.
-}
-
-export const Route = createRootRouteWithContext<RootWithContextProps>()({
+export const Route = createRootRoute({
   head: () => ({
     meta: [
       {
@@ -29,6 +15,9 @@ export const Route = createRootRouteWithContext<RootWithContextProps>()({
       {
         name: "viewport",
         content: "width=device-width, initial-scale=1",
+      },
+      {
+        title: "Lead Web Design & Development Partner | Weebo",
       },
     ],
     links: [
@@ -39,7 +28,9 @@ export const Route = createRootRouteWithContext<RootWithContextProps>()({
     ],
   }),
   shellComponent: RootComponent,
-})
+  notFoundComponent: NotFondComponent,
+  errorComponent: ErrorComponent,
+});
 
 function RootComponent({ children }: RootComponentProps) {
   return (
@@ -58,5 +49,63 @@ function RootComponent({ children }: RootComponentProps) {
         <Scripts />
       </body>
     </html>
-  )
+  );
+}
+
+function NotFondComponent(): React.ReactElement {
+  return (
+    <main className="flex flex-col">
+      <section className="flex flex-col">
+        <div className="flex flex-col">
+          <span className="font-mono text-foreground/40 text-sm tracking-tight">
+            404.
+          </span>
+          <h2 className="mt-2 font-medium text-lg">Not found.</h2>
+
+          <p className="mt-6 text-pretty leading-7">
+            Sorry, we couldn’t find the page you’re looking for. It might have
+            been moved or deleted.
+          </p>
+        </div>
+
+        <div className="mt-10 flex">
+          <Button asChild variant={"secondary"}>
+            <a href="/">
+              <i className="fi fi-sr-arrow-alt-circle-left" />
+              Bring me back
+            </a>
+          </Button>
+        </div>
+      </section>
+    </main>
+  );
+}
+
+function ErrorComponent(): React.ReactElement {
+  return (
+    <main className="flex flex-col">
+      <section className="flex flex-col">
+        <div className="flex flex-col">
+          <span className="font-mono text-foreground/40 text-sm tracking-tight">
+            500.
+          </span>
+          <h2 className="mt-2 font-medium text-lg">Error found.</h2>
+
+          <p className="mt-6 text-pretty leading-7">
+            It seems like something went wrong on our end. Please try again
+            later, or contact support if the problem persists.
+          </p>
+        </div>
+
+        <div className="mt-10 flex">
+          <Button asChild variant={"secondary"}>
+            <a href="/">
+              <i className="fi fi-sr-arrow-alt-circle-left" />
+              Bring me back
+            </a>
+          </Button>
+        </div>
+      </section>
+    </main>
+  );
 }

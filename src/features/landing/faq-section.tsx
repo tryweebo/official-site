@@ -3,14 +3,14 @@ import {
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "@shared/components"
-import * as motion from "motion/react-client"
-import * as React from "react"
+} from "@shared/components";
+import * as motion from "motion/react-client";
+import type * as React from "react";
 
-interface FAQ {
-  question: string
-  answer: string
-}
+type FAQ = {
+  question: string;
+  answer: string;
+};
 
 const faqs: FAQ[] = [
   {
@@ -59,33 +59,34 @@ const faqs: FAQ[] = [
     answer:
       "Although we are unable to provide refunds as we allocate dedicated time and resources to each client, we value flexibility. You have the option to pause your service at any time and resume it later, ensuring that you can fully benefit from our collaboration.",
   },
-]
+];
 
 function FAQItem({
   faq,
   value,
 }: {
-  faq: FAQ
-  value: string
+  faq: FAQ;
+  value: string;
 }): React.ReactElement {
-  const { question, answer } = faq
+  const { question, answer } = faq;
 
   return (
     <AccordionItem
+      className="hover:-rotate-y-2 transition-all duration-300 hover:scale-105"
       value={value}
-      className="transition-all duration-300 hover:-rotate-y-2 hover:scale-105"
     >
       <AccordionTrigger>{question}</AccordionTrigger>
       <AccordionContent>{answer}</AccordionContent>
     </AccordionItem>
-  )
+  );
 }
 
 export function FAQSesction(): React.ReactElement {
   return (
     <motion.section
+      className="flex flex-col items-center py-20"
+      id="faq"
       initial={{ opacity: 0, y: 200 }}
-      whileInView={{ opacity: 1, y: 0 }}
       transition={{
         type: "spring",
         damping: 8,
@@ -94,30 +95,29 @@ export function FAQSesction(): React.ReactElement {
         duration: 1.2,
       }}
       viewport={{ once: true, margin: "0% 0% -30% 0%" }}
-      className="flex flex-col items-center py-20"
-      id="faq"
+      whileInView={{ opacity: 1, y: 0 }}
     >
-      <span className="text-sm text-foreground/40 font-heading font-medium">
+      <span className="font-heading font-medium text-foreground/40 text-sm">
         FAQs.
       </span>
 
-      <h2 className="text-4xl font-semibold font-heading text-center leading-tight group laptop:w-9/12 mt-8">
+      <h2 className="group mt-8 laptop:w-9/12 text-center font-heading font-semibold text-4xl leading-tight">
         Most asked
         <br />
         questions
       </h2>
 
-      <div className="flex items-center justify-center gap-5 mt-16 w-full">
+      <div className="mt-16 flex w-full items-center justify-center gap-5">
         <Accordion
-          type="single"
+          className="flex laptop:w-8/12 tablet:w-10/12 w-full flex-col gap-3"
           collapsible
-          className="flex flex-col gap-3 w-full tablet:w-10/12 laptop:w-8/12"
+          type="single"
         >
           {faqs.map((faq, index) => (
-            <FAQItem faq={faq} value={`value-${index}`} key={index} />
+            <FAQItem faq={faq} key={index} value={`value-${index}`} />
           ))}
         </Accordion>
       </div>
     </motion.section>
-  )
+  );
 }

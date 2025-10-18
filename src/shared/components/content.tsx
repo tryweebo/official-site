@@ -1,15 +1,15 @@
-import * as React from "react"
+import type * as React from "react";
 
-interface ArticleContentProps {
-  children: React.ReactNode
-}
+type ArticleContentProps = {
+  children: React.ReactNode;
+};
 
 export function ArticleContent({
   children,
 }: ArticleContentProps): React.ReactElement<any> {
   return (
-    <article className="prose prose-sm tablet:prose-base tablet:prose-p:text-base prose-headings:leading-tight! prose-h1:text-xl! prose-h2:text-lg! prose-h3:text-base tablet:prose-li:text-base max-w-none prose-headings:font-medium prose-strong:font-medium prose-neutral prose-code:font-mono prose-img:overflow-hidden prose-img:border prose-img:border-border prose-img:bg-surface prose-img:rounded-xl prose-pre:bg-surface prose-pre:text-foreground prose-pre:border prose-pre:border-border prose-pre:font-medium overflow-hidden text-foregroun prose-headings:text-foreground prose-a:text-blue-600 prose-a:no-underline prose-strong:text-foreground prose-p:text-foreground prose-li:text-foreground">
+    <article className="prose prose-sm tablet:prose-base prose-neutral max-w-none overflow-hidden prose-img:overflow-hidden prose-img:rounded-xl prose-img:border prose-pre:border prose-img:border-border prose-pre:border-border prose-img:bg-surface prose-pre:bg-surface prose-code:font-mono prose-headings:font-medium prose-pre:font-medium prose-strong:font-medium prose-a:text-blue-600 prose-h1:text-xl! prose-h2:text-lg! prose-h3:text-base prose-headings:text-foreground prose-li:text-foreground prose-p:text-foreground prose-pre:text-foreground prose-strong:text-foreground tablet:prose-li:text-base tablet:prose-p:text-base text-foregroun prose-headings:leading-tight! prose-a:no-underline">
       {children}
     </article>
-  )
+  );
 }

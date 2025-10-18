@@ -1,11 +1,12 @@
-import * as motion from "motion/react-client"
-import * as React from "react"
+import * as motion from "motion/react-client";
+import type * as React from "react";
 
 export function MissionSection(): React.ReactElement {
   return (
     <motion.section
+      className="flex flex-col items-center py-20"
+      id="mission"
       initial={{ opacity: 0, y: 200 }}
-      whileInView={{ opacity: 1, y: 0 }}
       transition={{
         type: "spring",
         damping: 8,
@@ -14,55 +15,54 @@ export function MissionSection(): React.ReactElement {
         duration: 1.2,
       }}
       viewport={{ once: true, margin: "0% 0% -30% 0%" }}
-      className="flex flex-col items-center py-20"
-      id="mission"
+      whileInView={{ opacity: 1, y: 0 }}
     >
-      <span className="text-sm text-foreground/40 font-heading font-medium">
+      <span className="font-heading font-medium text-foreground/40 text-sm">
         Mission
       </span>
 
-      <h2 className="text-4xl font-semibold font-heading text-center leading-tight group laptop:w-9/12 mt-8">
+      <h2 className="group mt-8 laptop:w-9/12 text-center font-heading font-semibold text-4xl leading-tight">
         Make it big deals
         <br />
         with no bloated fees
       </h2>
 
-      <div className="flex items-center justify-center gap-5 mt-16 w-full tablet:w-10/12">
+      <div className="mt-16 flex tablet:w-10/12 w-full items-center justify-center gap-5">
         <ul className="flex flex-col gap-4">
-          <li className="flex items-center gap-3 text-foreground/60 hover:text-foreground transition-all duration-300 cursor-pointer">
+          <li className="flex cursor-pointer items-center gap-3 text-foreground/60 transition-all duration-300 hover:text-foreground">
             <i className="fi fi-sc-check-circle text-foreground/40" />
             10x Team scale up
           </li>
-          <li className="flex items-center gap-3 text-foreground/60 hover:text-foreground transition-all duration-300 cursor-pointer">
+          <li className="flex cursor-pointer items-center gap-3 text-foreground/60 transition-all duration-300 hover:text-foreground">
             <i className="fi fi-sc-check-circle text-foreground/40" />
             Best white label partner
           </li>
-          <li className="flex items-center gap-3 text-foreground/60 hover:text-foreground transition-all duration-300 cursor-pointer">
+          <li className="flex cursor-pointer items-center gap-3 text-foreground/60 transition-all duration-300 hover:text-foreground">
             <i className="fi fi-sc-check-circle text-foreground/40" />
             No cost surprises
           </li>
-          <li className="flex items-center gap-3 text-foreground/60 hover:text-foreground transition-all duration-300 cursor-pointer">
+          <li className="flex cursor-pointer items-center gap-3 text-foreground/60 transition-all duration-300 hover:text-foreground">
             <i className="fi fi-sc-check-circle text-foreground/40" />
             Fast turnarounds
           </li>
-          <li className="flex items-center gap-3 text-foreground/60 hover:text-foreground transition-all duration-300 cursor-pointer">
+          <li className="flex cursor-pointer items-center gap-3 text-foreground/60 transition-all duration-300 hover:text-foreground">
             <i className="fi fi-sc-check-circle text-foreground/40" />
             Professional quality
           </li>
-          <li className="flex items-center gap-3 text-foreground/60 hover:text-foreground transition-all duration-300 cursor-pointer">
+          <li className="flex cursor-pointer items-center gap-3 text-foreground/60 transition-all duration-300 hover:text-foreground">
             <i className="fi fi-sc-check-circle text-foreground/40" />
             Years experiences
           </li>
-          <li className="flex items-center gap-3 text-foreground/60 hover:text-foreground transition-all duration-300 cursor-pointer">
+          <li className="flex cursor-pointer items-center gap-3 text-foreground/60 transition-all duration-300 hover:text-foreground">
             <i className="fi fi-sc-check-circle text-foreground/40" />
             No risk
           </li>
-          <li className="flex items-center gap-3 text-foreground/60 hover:text-foreground transition-all duration-300 cursor-pointer">
+          <li className="flex cursor-pointer items-center gap-3 text-foreground/60 transition-all duration-300 hover:text-foreground">
             <i className="fi fi-sc-check-circle text-foreground/40" />
             Satisfaction guaranteed
           </li>
         </ul>
       </div>
     </motion.section>
-  )
+  );
 }

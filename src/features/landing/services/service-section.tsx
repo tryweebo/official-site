@@ -1,6 +1,6 @@
-import * as motion from "motion/react-client"
-import * as React from "react"
-import { StackDialog } from "./stack-dialog"
+import * as motion from "motion/react-client";
+import type * as React from "react";
+import { StackDialog } from "./stack-dialog";
 
 const services = [
   "Design & development",
@@ -12,22 +12,23 @@ const services = [
   "Framer Development",
   "Shopify Development",
   "Custom Development",
-]
+];
 
 function ServiceItem({ service }: { service: string }): React.ReactElement {
   return (
-    <div className="flex items-center gap-2 cursor-pointer transition-all duration-300 hover:-translate-y-1 text-foreground/60 hover:text-foreground">
+    <div className="hover:-translate-y-1 flex cursor-pointer items-center gap-2 text-foreground/60 transition-all duration-300 hover:text-foreground">
       <i className="fi fi-sc-bullet text-foreground/40" />
       {service}
     </div>
-  )
+  );
 }
 
 export function ServiceSection(): React.ReactElement {
   return (
     <motion.section
+      className="flex flex-col items-center py-20"
+      id="services"
       initial={{ opacity: 0, y: 200 }}
-      whileInView={{ opacity: 1, y: 0 }}
       transition={{
         type: "spring",
         damping: 8,
@@ -36,28 +37,27 @@ export function ServiceSection(): React.ReactElement {
         duration: 1.2,
       }}
       viewport={{ once: true, margin: "0% 0% -30% 0%" }}
-      className="flex flex-col items-center py-20"
-      id="services"
+      whileInView={{ opacity: 1, y: 0 }}
     >
-      <span className="text-sm text-foreground/40 font-heading font-medium">
+      <span className="font-heading font-medium text-foreground/40 text-sm">
         Services
       </span>
 
-      <h2 className="text-4xl font-semibold font-heading text-center leading-tight group laptop:w-9/12 mt-8">
+      <h2 className="group mt-8 laptop:w-9/12 text-center font-heading font-semibold text-4xl leading-tight">
         All of the website work
         <br />
         done for you
       </h2>
 
-      <div className="flex justify-center mt-5">
+      <div className="mt-5 flex justify-center">
         <StackDialog />
       </div>
 
-      <div className="flex flex-col justify-center gap-4 mt-16">
+      <div className="mt-16 flex flex-col justify-center gap-4">
         {services.map((service, index) => (
           <ServiceItem key={index} service={service} />
         ))}
       </div>
     </motion.section>
-  )
+  );
 }

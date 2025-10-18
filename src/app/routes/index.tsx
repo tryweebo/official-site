@@ -9,9 +9,9 @@ import {
   ServiceSection,
   TestimonialSection,
   WorkSection,
-} from "@features/landing"
-import { generateMetaTags } from "@shared/libs"
-import { createFileRoute } from "@tanstack/react-router"
+} from "@features/landing";
+import { generateMetaTags } from "@shared/libs";
+import { createFileRoute } from "@tanstack/react-router";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -22,7 +22,7 @@ export const Route = createFileRoute("/")({
     }),
   }),
   component: PageComponent,
-})
+});
 
 function PageComponent() {
   return (
@@ -38,5 +38,5 @@ function PageComponent() {
       <FAQSesction />
       <CTASection />
     </main>
-  )
+  );
 }

@@ -1,10 +1,10 @@
-import * as motion from "motion/react-client"
-import * as React from "react"
+import * as motion from "motion/react-client";
+import type * as React from "react";
 
-interface Process {
-  title: string
-  description: string
-}
+type Process = {
+  title: string;
+  description: string;
+};
 
 const processSteps: Process[] = [
   {
@@ -32,33 +32,34 @@ const processSteps: Process[] = [
     description:
       "Time to launch. We'll transfer full ownership of the site to you, and then train you in how to use the site so you can easily manage it yourself.",
   },
-]
+];
 
 function ProcessItem({ step }: { step: Process }): React.ReactElement {
-  const { title, description } = step
+  const { title, description } = step;
 
   return (
-    <div className="flex flex-col rounded-2xl p-1 w-full bg-surface group cursor-pointer transition-all duration-300 hover:-translate-y-4 group">
-      <div className="flex flex-col rounded-xl p-3 relative">
+    <div className="group hover:-translate-y-4 group flex w-full cursor-pointer flex-col rounded-2xl bg-surface p-1 transition-all duration-300">
+      <div className="relative flex flex-col rounded-xl p-3">
         <div className="flex items-center gap-2">
           <i className="fi fi-sc-check-circle text-foreground/40" />
           <h3 className="font-medium text-lg">{title}</h3>
         </div>
-        <p className="text-foreground/60 leading-relaxed text-sm mt-4 pb-3">
+        <p className="mt-4 pb-3 text-foreground/60 text-sm leading-relaxed">
           {description}
         </p>
 
         <i className="fi fi-sr-bullet absolute top-2 right-2 text-foreground/30" />
       </div>
     </div>
-  )
+  );
 }
 
 export function ProcessSection(): React.ReactElement {
   return (
     <motion.section
+      className="flex flex-col items-center py-20"
+      id="how-it-works"
       initial={{ opacity: 0, y: 200 }}
-      whileInView={{ opacity: 1, y: 0 }}
       transition={{
         type: "spring",
         damping: 8,
@@ -67,24 +68,23 @@ export function ProcessSection(): React.ReactElement {
         duration: 1.2,
       }}
       viewport={{ once: true, margin: "0% 0% -30% 0%" }}
-      className="flex flex-col items-center py-20"
-      id="how-it-works"
+      whileInView={{ opacity: 1, y: 0 }}
     >
-      <span className="text-sm text-foreground/40 font-heading font-medium">
+      <span className="font-heading font-medium text-foreground/40 text-sm">
         How it works
       </span>
 
-      <h2 className="text-4xl font-semibold font-heading text-center leading-tight group laptop:w-9/12 mt-8">
+      <h2 className="group mt-8 laptop:w-9/12 text-center font-heading font-semibold text-4xl leading-tight">
         Uncomplicated process
         <br />
         for amazing results
       </h2>
 
-      <div className="flex flex-col items-center gap-5 mt-20 tablet:w-10/12 laptop:w-8/12 relative">
+      <div className="relative mt-20 flex laptop:w-8/12 tablet:w-10/12 flex-col items-center gap-5">
         {processSteps.map((step, index) => (
           <ProcessItem key={index} step={step} />
         ))}
       </div>
     </motion.section>
-  )
+  );
 }
