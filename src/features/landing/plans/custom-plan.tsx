@@ -13,7 +13,9 @@ export function CustomPlan(): React.ReactElement {
             </h3>
           </div>
 
-          <div className="mt-4 font-heading font-medium text-xl">Custom</div>
+          <div className="mt-4 font-heading font-medium text-xl">
+            Custom ($1,000 - $10,000)
+          </div>
 
           <p className="mt-5 text-balance text-foreground/60 leading-relaxed">
             If you need something different or one time purchase or help for

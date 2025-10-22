@@ -4,7 +4,6 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@shared/components";
-import * as motion from "motion/react-client";
 import type * as React from "react";
 
 type FAQ = {
@@ -83,25 +82,10 @@ function FAQItem({
 
 export function FAQSesction(): React.ReactElement {
   return (
-    <motion.section
-      className="flex flex-col items-center py-20"
-      id="faq"
-      initial={{ opacity: 0, y: 200 }}
-      transition={{
-        type: "spring",
-        damping: 8,
-        stiffness: 60,
-        ease: "easeInOut",
-        duration: 1.2,
-      }}
-      viewport={{ once: true, margin: "0% 0% -30% 0%" }}
-      whileInView={{ opacity: 1, y: 0 }}
-    >
-      <span className="font-heading font-medium text-foreground/40 text-sm">
-        FAQs.
-      </span>
+    <section className="flex flex-col items-center py-28" id="faq">
+      <span className="text-foreground/40 text-sm">FAQs</span>
 
-      <h2 className="group mt-8 laptop:w-9/12 text-center font-heading font-semibold text-4xl leading-tight">
+      <h2 className="mt-8 text-center font-medium text-5xl leading-tight tracking-tight">
         Most asked
         <br />
         questions
@@ -118,6 +102,6 @@ export function FAQSesction(): React.ReactElement {
           ))}
         </Accordion>
       </div>
-    </motion.section>
+    </section>
   );
 }

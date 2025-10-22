@@ -1,4 +1,3 @@
-import * as motion from "motion/react-client";
 import type * as React from "react";
 import { StackDialog } from "./stack-dialog";
 
@@ -16,8 +15,8 @@ const services = [
 
 function ServiceItem({ service }: { service: string }): React.ReactElement {
   return (
-    <div className="hover:-translate-y-1 flex cursor-pointer items-center gap-2 text-foreground/60 transition-all duration-300 hover:text-foreground">
-      <i className="fi fi-sc-bullet text-foreground/40" />
+    <div className="flex items-center gap-2 text-foreground/60">
+      <i className="fi fi-sc-bullet" />
       {service}
     </div>
   );
@@ -25,26 +24,11 @@ function ServiceItem({ service }: { service: string }): React.ReactElement {
 
 export function ServiceSection(): React.ReactElement {
   return (
-    <motion.section
-      className="flex flex-col items-center py-20"
-      id="services"
-      initial={{ opacity: 0, y: 200 }}
-      transition={{
-        type: "spring",
-        damping: 8,
-        stiffness: 60,
-        ease: "easeInOut",
-        duration: 1.2,
-      }}
-      viewport={{ once: true, margin: "0% 0% -30% 0%" }}
-      whileInView={{ opacity: 1, y: 0 }}
-    >
-      <span className="font-heading font-medium text-foreground/40 text-sm">
-        Services
-      </span>
+    <section className="flex flex-col items-center py-28" id="services">
+      <span className="text-foreground/40 text-sm">Services</span>
 
-      <h2 className="group mt-8 laptop:w-9/12 text-center font-heading font-semibold text-4xl leading-tight">
-        All of the website work
+      <h2 className="mt-8 text-center font-medium text-5xl leading-tight tracking-tight">
+        The website just
         <br />
         done for you
       </h2>
@@ -58,6 +42,6 @@ export function ServiceSection(): React.ReactElement {
           <ServiceItem key={index} service={service} />
         ))}
       </div>
-    </motion.section>
+    </section>
   );
 }

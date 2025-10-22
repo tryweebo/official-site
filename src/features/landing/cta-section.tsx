@@ -1,31 +1,15 @@
 import { Button } from "@shared/components";
-import * as motion from "motion/react-client";
 import type * as React from "react";
 
 export function CTASection(): React.ReactElement {
   return (
-    <motion.section
-      className="flex flex-col items-center py-20"
-      id="cta"
-      initial={{ opacity: 0, y: 200 }}
-      transition={{
-        type: "spring",
-        damping: 8,
-        stiffness: 60,
-        ease: "easeInOut",
-        duration: 1.2,
-      }}
-      viewport={{ once: true, margin: "0% 0% -30% 0%" }}
-      whileInView={{ opacity: 1, y: 0 }}
-    >
-      <span className="font-heading font-medium text-foreground/40 text-sm">
-        Get Started.
-      </span>
+    <section className="flex flex-col items-center py-28" id="cta">
+      <span className="text-foreground/40 text-sm">Get Started.</span>
 
-      <h2 className="group mt-8 laptop:w-9/12 text-center font-heading font-semibold text-4xl leading-tight">
+      <h2 className="mt-8 text-center font-medium text-5xl leading-tight tracking-tight">
         Let's move on
         <br />
-        get spot
+        get a spot
       </h2>
 
       <p className="mx-auto mt-10 tablet:w-7/12 w-full text-pretty text-center text-foreground/60 leading-7">
@@ -64,6 +48,6 @@ export function CTASection(): React.ReactElement {
           </a>
         </Button>
       </div>
-    </motion.section>
+    </section>
   );
 }

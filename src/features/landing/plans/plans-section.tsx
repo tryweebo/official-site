@@ -1,4 +1,3 @@
-import * as motion from "motion/react-client";
 import type * as React from "react";
 import { CustomPlan } from "./custom-plan";
 import { DetailDialog } from "./detail-dialog";
@@ -7,26 +6,11 @@ import { SupportPlan } from "./support-plan";
 
 export function PlansSection(): React.ReactElement {
   return (
-    <motion.section
-      className="flex flex-col items-center py-20"
-      id="plans"
-      initial={{ opacity: 0, y: 200 }}
-      transition={{
-        type: "spring",
-        damping: 8,
-        stiffness: 60,
-        ease: "easeInOut",
-        duration: 1.2,
-      }}
-      viewport={{ once: true, margin: "0% 0% -30% 0%" }}
-      whileInView={{ opacity: 1, y: 0 }}
-    >
-      <span className="font-heading font-medium text-foreground/40 text-sm">
-        Plans.
-      </span>
+    <section className="flex flex-col items-center py-28" id="plans">
+      <span className="text-foreground/40 text-sm">Plans</span>
 
-      <h2 className="group mt-8 laptop:w-9/12 text-center font-heading font-semibold text-4xl leading-tight">
-        Clear & simple pricing
+      <h2 className="mt-8 text-center font-medium text-5xl leading-tight tracking-tight">
+        Simple pricing
         <br />
         no hidden fees
       </h2>
@@ -42,6 +26,6 @@ export function PlansSection(): React.ReactElement {
           <SubscriptionPlan />
         </div>
       </div>
-    </motion.section>
+    </section>
   );
 }
