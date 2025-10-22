@@ -22,9 +22,7 @@
   --breakpoint-laptop: 1024px;
   --breakpoint-desktop: 1280px;
 
-  --text-sm: 0.84375rem;
-  --text-base: 0.9375rem;
-  --text-lg: 1.0625rem;
+  --leading-tight: 1.1;
 
   --color-background: hsl(0 0 100%);
   --color-foreground: hsl(0 0 4%);
@@ -52,7 +50,7 @@
   }
 
   html {
-    scroll-behavior: smooth;
+    @apply scroll-smooth;
   }
 
   body {
