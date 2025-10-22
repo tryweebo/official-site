@@ -1,4 +1,4 @@
-import { Button, CenteredLayout, Footer, Header } from "@shared/components";
+import { Button, CenteredLayout } from "@shared/components";
 import styles from "@shared/styles/globals.css?url";
 import { createRootRoute, HeadContent, Scripts } from "@tanstack/react-router";
 
@@ -17,7 +17,7 @@ export const Route = createRootRoute({
         content: "width=device-width, initial-scale=1",
       },
       {
-        title: "Lead Web Design & Development Partner | Weebo",
+        title: "Lead web design & development partner | Weebo",
       },
     ],
     links: [
@@ -40,11 +40,9 @@ function RootComponent({ children }: RootComponentProps) {
       </head>
       <body>
         <CenteredLayout>
-          <Header />
           <div className="min-h-screen py-20 tablet:pt-0 tablet:pb-36">
             {children}
           </div>
-          <Footer />
         </CenteredLayout>
         <Scripts />
       </body>
