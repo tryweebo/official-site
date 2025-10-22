@@ -2,33 +2,27 @@
   "compilerOptions": {
     "target": "ES2022",
     "jsx": "react-jsx",
-    "lib": ["DOM", "DOM.Iterable", "ES2022"],
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
     "baseUrl": ".",
-    "rootDirs": [".", "./.react-router/types"],
-    "module": "ES2022",
+    "module": "ESNext",
     "moduleResolution": "bundler",
     "paths": {
-      "@shared/*": ["./src/shared/*"],
       "@features/*": ["./src/features/*"],
-      "@routes/*": ["./src/routes/*"],
-      "~/*": ["./src/*"],
-      "@/*": ["./*"]
+      "@shared/*": ["./src/shared/*"],
+      "@app/*": ["./src/app/*"],
+      "~/*": ["./src/*"]
     },
-    "resolveJsonModule": true,
-    "types": ["node", "vite/client"],
-    "allowJs": true,
+    "types": ["vite/client"],
+    "allowImportingTsExtensions": true,
     "strict": true,
-    "noImplicitAny": false,
+    "noFallthroughCasesInSwitch": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
     "noEmit": true,
-    "esModuleInterop": true,
-    "verbatimModuleSyntax": true,
+    "verbatimModuleSyntax": false,
     "skipLibCheck": true,
+    "noUncheckedSideEffectImports": true,
     "strictNullChecks": true
   },
-  "include": [
-    "**/*",
-    "**/.server/**/*",
-    "**/.client/**/*",
-    ".react-router/types/**/*"
-  ]
+  "include": ["**/*.ts", "**/*.tsx", "vite.config.js"]
 }
